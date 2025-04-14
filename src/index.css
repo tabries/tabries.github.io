@@ -1,11 +1,17 @@
 @import url('https://fonts.cdnfonts.com/css/general-sans');
+@font-face {
+  font-family: 'UbuntuMono';
+  src: url('../src/assets/fonts/UbuntuMono-Regular.ttf');
+}
+
 @import 'tailwindcss';
 
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
 
 @config '../tailwind.config.js';
+
+@theme {
+  --font-ubuntumono: 'UbuntuMono', monospace;
+}
 
 * {
   scroll-behavior: smooth;
@@ -42,7 +48,7 @@ body {
   }
 
   .nav-sidebar {
-    @apply absolute left-0 right-0 bg-black-200 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
+    @apply absolute left-0 right-0 bg-black-200 backdrop-blur-sm transition-all duration-300 ease-in-out  z-20 mx-auto ;
   }
 
   
@@ -71,11 +77,11 @@ body {
   }
 
   .grid-headtext {
-    @apply text-xl font-semibold mb-2 text-white font-generalsans;
+    @apply text-xl font-semibold mb-2 text-white font-ubuntumono;
   }
 
   .grid-subtext {
-    @apply text-[#afb0b6] text-base font-generalsans;
+    @apply text-[#afb0b6] text-base font-ubuntumono;
   }
 
   .copy-container {
