@@ -956,13 +956,13 @@ const DemoComputer = (props) => {
             geometry={nodes['Monitor-B-_computer_0_1'].geometry}
             material={materials.computer}
           />
-          <mesh
+          {/* <mesh
             name="Monitor-B-_computer_0_2"
             // castShadow
             // receiveShadow
             geometry={nodes['Monitor-B-_computer_0_2'].geometry}
             material={materials.base__0}
-          />
+          /> */}
           <mesh
             name="Monitor-B-_computer_0_3"
             // castShadow
