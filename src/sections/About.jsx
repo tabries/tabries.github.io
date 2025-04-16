@@ -19,10 +19,11 @@ const About = () => {
   useEffect(() => {
     globeEl.current.pointOfView({ lat: 22, lng: -51, altitude: 2 });
     globeEl.current.controls().autoRotate = true;
+    globeEl.current.controls().enableZoom = false;
   }, []);
 
   return (
-    <section className="c-space my-20" id="about">
+    <section className="c-space my-20 mt-[50rem]" id="about">
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
@@ -64,7 +65,7 @@ const About = () => {
                 backgroundImageOpacity={0.5}
                 showAtmosphere
                 showGraticules
-                globeImageUrl="public/textures/earth-night.jpg"
+                globeImageUrl="/textures/earth-night.jpg"
                 bumpImageUrl="//cdn.jsdelivr.net/npm/three-globe/example/img/earth-topology.png"
                 labelsData={[{ lat: 40, lng: -100, text: 'Rjieka, Croatia', color: 'white', size: 15 }]}
               />
