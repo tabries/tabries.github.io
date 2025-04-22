@@ -73,7 +73,7 @@ body {
 
   /* about section */
   .grid-container {
-    @apply w-full h-full rounded-lg border-[2px] border-dashed border-[#9FFF1E]/50 bg-black-200 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+    @apply w-full h-full sm:pb-7  flex flex-col gap-5;
   }
 
   .grid-headtext {

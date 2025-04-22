@@ -76,7 +76,7 @@ const Hero = () => {
       </div>
 
       <div
-        className="fixed bottom-14 left-0 right-0 w-full z-50 c-space"
+        className="fixed bottom-14 left-0 right-0 w-full z-20 c-space"
         style={{ opacity: buttonOpacity }}
       >
         <a href="#about" className="w-fit">
