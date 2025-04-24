@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import Globe from "react-globe.gl";
 import AboutCard1 from "/src/assets/icons/AboutCard1.svg?react";
 import AboutCard2 from "/src/assets/icons/AboutCard2.svg?react";
@@ -12,19 +12,10 @@ import LinkedIn from "/src/assets/icons/LinkedIn.svg?react";
 import Github from "/src/assets/icons/Github.svg?react";
 import Gmail from "/src/assets/icons/Gmail.svg?react";
 import Button from "../components/Button.jsx";
+import SectionTitle from "../components/SectionTitle.jsx";
 
 const About = () => {
-  const [hasCopied, setHasCopied] = useState(false);
   const globeEl = useRef();
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(" adrian@jsmastery.pro");
-    setHasCopied(true);
-
-    setTimeout(() => {
-      setHasCopied(false);
-    }, 2000);
-  };
 
   useEffect(() => {
     globeEl.current.pointOfView({ lat: 22, lng: -51, altitude: 2 });
@@ -33,7 +24,8 @@ const About = () => {
   }, []);
 
   return (
-    <section className="c-space my-20 mt-[50rem] relative pb-20" id="about">
+    <section className="c-space my-20 mt-[50rem] relative pb-5" id="about">
+      <SectionTitle title="About Me" />
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full ">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container max-w-[23rem]">

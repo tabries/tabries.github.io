@@ -3,9 +3,9 @@ import About from './sections/About.jsx';
 import Footer from './sections/Footer.jsx';
 import Navbar from './sections/Navbar.jsx';
 import Contact from './sections/Contact.jsx';
-import Clients from './sections/Clients.jsx';
-import Projects from './sections/Projects.jsx';
-import WorkExperience from './sections/Experience.jsx';
+import Experience from './sections/Experience.jsx';
+import Education from './sections/Education.jsx';
+import Awards from './sections/Awards.jsx';
 
 const App = () => {
   return (
@@ -13,11 +13,16 @@ const App = () => {
       {/* <Navbar /> */}
       <Hero />
       <About />
+      <Experience />
+      <Education />
+      <Awards />
+      <Contact />
+      <Footer /> 
       {/* <Projects />
       <Clients />
       <WorkExperience />
-      <Contact />
-      <Footer /> */}
+      
+      */}
     </main>
   );
 };

@@ -3,6 +3,10 @@
   font-family: 'UbuntuMono';
   src: url('../src/assets/fonts/UbuntuMono-Regular.ttf');
 }
+@font-face {
+  font-family: 'SuperMarioWorld';
+  src: url('../src/assets/fonts/Super-Mario-World.ttf');
+}
 
 @import 'tailwindcss';
 
@@ -11,6 +15,7 @@
 
 @theme {
   --font-ubuntumono: 'UbuntuMono', monospace;
+  --font-supermarioworld: 'SuperMarioWorld', monospace;
 }
 
 * {
