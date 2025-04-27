@@ -2,7 +2,8 @@ import PillBorder from "/src/assets/icons/PillBorder.svg?react";
 
 const ExperienceTechStack = ({ techStack }) => {
   return (
-    <ul className="ml-53 mt-10 w-[44rem] flex gap-4 flex-wrap justify-center">
+    <ul className="ml-53 mt-10 w-[44rem] flex gap-4 flex-wrap justify-center
+    md:ml-30">
       {techStack.map((name, index) => (
         <li key={index} className="items-center  h-[48px] justify-center w-[8rem] text-center font-ubuntumono flex gap-12 mb-1">
           <PillBorder className="absolute w-32 h-14"/>

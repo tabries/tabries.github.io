@@ -54,6 +54,44 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
         : isTablet
           ? [-11, -7, -10]
           : [-13, -13, -10],
+    
+    perspectiveCameraPosition: isSmall
+    ? [-0.75, -0.45, 18.25]
+    : isMobile
+      ? [-0.75, -0.45, 18.25]
+      : isTablet
+        ? [-0.75, -0.45, 18.25]
+        : [0, 0, 30],
+    perspectiveCameraRotation: isSmall
+    ? [0, 0, -1.57]
+    : isMobile
+      ? [0, 0, -1.57]
+      : isTablet
+        ? [0, 0, -1.57]
+        : [0, 0, 0],
+
+    heroCameraPosition: isSmall
+    ? [-1.9, -16.8, -10.0]
+    : isMobile
+      ? [-1.9, -16.2, -8.0]
+      : isTablet
+        ? [-1.9, -16.2, -2.0]
+        : [-2, -16.9, 0],
+
+    heroCameraPositionOffset: isSmall
+    ? [0.015, -0.024, 0.025]
+    : isMobile
+      ? [0.015, -0.02, 0.025]
+      : isTablet
+        ? [0.015, -0.023, 0.025]
+        : [0, -0.005, 0.02],
+    heroCameraRotationOffset: isSmall
+      ? [0.0005, -0.00001, -0.00187]
+      : isMobile
+        ? [0.0005, -0.00001, -0.00187]
+        : isTablet
+          ? [0.0005, -0.00001, -0.00187]
+          : [0, 0.0008, 0],
   };
 };
 

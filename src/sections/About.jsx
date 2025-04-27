@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
+import clsx from "clsx";
 import Globe from "react-globe.gl";
+import { useMediaQuery } from "react-responsive";
 import AboutCard1 from "/src/assets/icons/AboutCard1.svg?react";
 import AboutCard2 from "/src/assets/icons/AboutCard2.svg?react";
 import TechStack from "/src/assets/icons/TechStack.svg?react";
@@ -15,6 +17,16 @@ import Button from "../components/Button.jsx";
 import SectionTitle from "../components/SectionTitle.jsx";
 
 const About = () => {
+  // Use media queries to determine screen size
+  const isSmall = useMediaQuery({ maxWidth: 440 });
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isLG = useMediaQuery({ minWidth: 1024 });
+  const isTablet = useMediaQuery({ maxWidth: 1280 });
+  const isXL = useMediaQuery({ minWidth: 1280 });
+
+  console.log("window.innerWidth", window.innerWidth);
+  console.log("isSmall, isMobile, isTablet", isSmall, isMobile, isTablet);
+
   const globeEl = useRef();
 
   useEffect(() => {
@@ -26,8 +38,15 @@ const About = () => {
   return (
     <section className="c-space my-20 mt-[50rem] relative pb-5" id="about">
       <SectionTitle title="About Me" />
-      <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full ">
-        <div className="col-span-1 xl:row-span-3">
+      <div
+        className={clsx(
+          "grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full",
+          { "order-0": true, "w-full px-20": isTablet }
+        )}
+      >
+        <div
+          className={clsx("col-span-1 xl:row-span-3 justify-items-center", { "order-0 row-span-2": isXL, })}
+        >
           <div className="grid-container max-w-[23rem]">
             <div className="pl-8 pt-8 pr-8 relative z-10">
               <img
@@ -50,7 +69,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="col-span-1 xl:row-span-3">
+        <div
+        className={clsx(
+          "col-span-1 xl:row-span-3 justify-items-center" ,
+          { "order-1": true, }
+        )}
+        >
           <div className="grid-container max-w-[23rem]">
             <div className="pl-7 pt-8 pr-8 relative z-10 flex flex-col flex-wrap gap-2 h-full">
               <TechStack
@@ -71,7 +95,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="col-span-1 xl:row-span-4">
+        <div
+          className={clsx("col-span-1 xl:row-span-4 justify-self-center", {
+            "order-2": isXL,
+            "order-3 ": isTablet,
+          })}
+        >
           <div className="grid-container max-w-[23rem]">
             <div className="pl-7 pt-8 pr-8 relative z-10 flex flex-col flex-wrap h-full">
               <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
@@ -113,11 +142,21 @@ const About = () => {
           </div>
         </div>
 
-        <div className="xl:col-span-2 xl:row-span-3 w-[46rem] mt-7">
-          <div className="grid-container ">
-            <div className="pl-7 pt-8 pr-8 z-10 flex flex-row flex-nowrap gap-44 h-full">
-              <Keyboard alt="grid-1" className="w-[50rem] ml-10 mt-12" />
-              <div className="pt-20">
+        <div
+          className={clsx("justify-self-center xl:col-span-2 xl:row-span-3 mt-3", {
+            "order-3 mt-7": isXL,
+            "order-2 col-span-2 h-[29rem]": isTablet,
+          })}
+        >
+          <div className="grid-container items-center">
+            <div
+            className={clsx("w-[50rem] align-self-center z-10 flex flex-row flex-nowrap gap-0 h-full", {
+              "pl-7 pt-8 pr-8": isXL,
+            })}
+            >
+              <Keyboard alt="grid-1" className="w-[38rem] ml-0 mt-18" />
+              {/* <MyPassionSeparator className="h-full w-full left-[334px]" /> */}
+              <div className="w-[40rem] ml-20 mr-12 mt-28">
                 <p className="grid-headtext">My Passion for Coding</p>
                 <p className="grid-subtext">
                   I love solving problems and building things through code.
@@ -127,8 +166,8 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <MyPassionSeparator className="absolute left-[334px]" />
-            <MyPassion className="absolute h-[27.5rem]" />
+            
+            <MyPassion className="absolute h-[28.5rem] w-[50rem]" />
           </div>
         </div>
 
@@ -155,15 +194,20 @@ const About = () => {
           </div>
         </div> */}
 
-        <div className="xl:col-span-1 xl:row-span-2">
-          <div className="grid-container max-w-[23rem] flex flex-row !pb-0">
-            <div className="justify-center content-center flex flex-wrap gap-2 h-full">
+        <div
+          className={clsx("xl:col-span-1 xl:row-span-2 justify-self-center content-center", {
+            "order-4": true,
+            // "order-3": isTablet,
+          })}
+        >
+          <div className="relative flex flex-row">
+            <div className="left-22 bottom-3 absolute h-auto justify-center content-center flex flex-wrap gap-2 h-full">
               <LinkedIn className="mt-[2px]" />
               <Github />
               <Gmail className="mt-[6px] ml-[2px]" />
             </div>
 
-            <ContactOptions className="absolute mt-[-30px] h-[22rem] w-[363px]" />
+            <ContactOptions className="mt-[-30px] h-[22rem] w-[363px]" />
           </div>
         </div>
       </div>

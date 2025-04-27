@@ -15,7 +15,7 @@ const Contact = () => {
   return (
     <section className="content-center c-space relative" id="contact">
       <SectionTitle title="Contact Me" className={""} />
-      <div className="ml-104 mt-12">
+      <div className="w-full mt-12 flex flex-col items-center">
         <div
           className="font-supermarioworld text-[#05FF4D] h-100"
         >
