@@ -1,4 +1,4 @@
-import { Leva } from "leva";
+import { Leva, useControls } from "leva";
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useMediaQuery } from "react-responsive";
@@ -20,10 +20,51 @@ const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
 
-  const sizes = calculateSizes(isSmall, isMobile, isTablet);
+  const { perspectiveCameraPosition, perspectiveCameraRotation } =
+    calculateSizes(isSmall, isMobile, isTablet);
 
   const [sectionOpacity, setSectionOpacity] = useState(1);
   const [buttonOpacity, setButtonOpacity] = useState(1);
+
+  // const { positionX, positionY, positionZ, rotationX, rotationY, rotationZ } =
+  //   useControls({
+  //     positionX: {
+  //       value: -0.75,
+  //       min: -5,
+  //       max: 30,
+  //       step: 0.25,
+  //     },
+  //     positionY: {
+  //       value: -0.45,
+  //       min: -5,
+  //       max: 30,
+  //       step: 0.25,
+  //     },
+  //     positionZ: {
+  //       value: 18.25,
+  //       min: -5,
+  //       max: 30,
+  //       step: 0.25,
+  //     },
+  //     rotationX: {
+  //       value: 0,
+  //       min: -0.1,
+  //       max: 1.1,
+  //       step: 0.01,
+  //     },
+  //     rotationY: {
+  //       value: 0,
+  //       min: -0.1,
+  //       max: 1.1,
+  //       step: 0.01,
+  //     },
+  //     rotationZ: {
+  //       value: -1.57,
+  //       min: -2.1,
+  //       max: 2.1,
+  //       step: 0.01,
+  //     },
+  //   });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,14 +90,19 @@ const Hero = () => {
       id="home"
       style={{ opacity: sectionOpacity }} // Dynamically set sectionOpacity
     >
+      {/* <Leva /> */}
       <div className="w-full h-full fixed inset-0">
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
             {/* To hide controller */}
-            <Leva hidden />
-            <PerspectiveCamera makeDefault position={[0, 0, 30]} />
+            {/* <Leva hidden /> */}
+            <PerspectiveCamera
+              makeDefault
+              position={perspectiveCameraPosition}
+              rotation={perspectiveCameraRotation}
+            />
 
-            <HeroCamera isMobile={isMobile}>
+            <HeroCamera>
               <DemoComputer
                 texture={"/textures/project/helloWorldImGabo.mp4"}
               />
