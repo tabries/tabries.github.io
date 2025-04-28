@@ -16,16 +16,6 @@ import Button from "../components/Button.jsx";
 import SectionTitle from "../components/SectionTitle.jsx";
 
 const About = () => {
-  // Use media queries to determine screen size
-  const isSmall = useMediaQuery({ maxWidth: 440 });
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-  const isLG = useMediaQuery({ minWidth: 1024 });
-  const isTablet = useMediaQuery({ maxWidth: 1280 });
-  const isXL = useMediaQuery({ minWidth: 1280 });
-
-  console.log("window.innerWidth", window.innerWidth);
-  console.log("isSmall, isMobile, isTablet", isSmall, isMobile, isTablet);
-
   const globeEl = useRef();
 
   useEffect(() => {
@@ -37,14 +27,18 @@ const About = () => {
   return (
     <section className="c-space my-20 mt-[50rem] relative pb-5" id="about">
       <SectionTitle title="About Me" />
-      <div className="flex flex-col
-        xl:flex-row">
+      <div
+        className="flex flex-col
+        xl:flex-row
+        max-lg:gap-12
+        xl:gap-4"
+      >
         <div
-          className="px-20  grid  gap-5 h-full
-            grid-rows-2
-            grid-cols-1
-            lg:grid-cols-2
-            xl:grid-rows-4 xl:px-0"
+          className="grid  h-full gap-5
+          grid-rows-2
+          grid-cols-1
+          lg:grid-cols-2
+          xl:grid-rows-4 xl:px-0 xl:gap-4"
         >
           <div
             className="order-0 justify-items-center content-center h-[28rem]
@@ -56,7 +50,7 @@ const About = () => {
                 <img
                   src="assets/avatar.png"
                   alt="grid-1"
-                  className="w-full sm:h-[175px] h-fit object-contain"
+                  className="w-full !h-[175px] h-fit object-contain"
                 />
 
                 <div className="px-7 pt-4">
@@ -74,15 +68,15 @@ const About = () => {
           </div>
 
           <div
-            className="col-span-1 xl:row-span-2 justify-items-center content-center
+            className="relative col-span-1 xl:row-span-2 justify-items-center content-center
             h-[27rem]
             xl:content-start"
           >
-            <div className="flex flex-col max-w-[23rem] ">
+            <div className="flex flex-col max-w-[24rem] ">
               <div className="pl-7 pt-8 pr-8 relative z-10 flex flex-col flex-wrap gap-2 h-full">
                 <TechStack
                   alt="grid-1"
-                  className="w-full pl-7 mt-6 sm:h-[150px] sm:w-[280px] h-fit object-contain"
+                  className="w-full px-9 mt-8 h-[150px] w-[280px] h-fit object-contain"
                 />
 
                 <div className="pl-10 pr-10 pt-4">
@@ -95,7 +89,11 @@ const About = () => {
                 </div>
               </div>
 
-              <AboutCard1 className="absolute h-[27.5rem]" />
+              <AboutCard2
+                className="absolute h-[28.5rem] top-3
+                lg:top-3
+                xl:top-[-0.75rem]"
+              />
             </div>
           </div>
 
@@ -107,47 +105,52 @@ const About = () => {
           >
             <div className="grid-container items-center">
               <div
-                className="w-[50rem] align-self-center z-10 flex flex-row flex-nowrap gap-0 h-full
+                className=" align-self-center z-10 flex flex-row flex-nowrap gap-0 h-full
                 lg:pl-7 lg:pt-8 lg:pr-8"
               >
-                {/* <MyPassionSeparator className="h-full w-full left-[334px]" /> */}
-                <div className="w-[40rem] 
-                max-lg:w-[14rem] max-lg:ml-72">
-                  <p className="grid-headtext">My Passion for Coding</p>
-                  <p className="grid-subtext">
-                    I love solving problems and building things through code.
-                    Programming isn&apos;t just my profession—it&apos;s my
-                    passion. I enjoy exploring new technologies, and enhancing
-                    my skills.
-                  </p>
+                <div
+                  className="flex flex-col
+                  lg:w-[40rem] lg:justify-center lg:items-end"
+                >
+                  <div
+                    className="w-[284px] relative lg:bottom-[22px] 
+                    max-lg:top-20 max-lg:w-60"
+                  >
+                    <p className="grid-headtext">My Passion for Coding</p>
+                    <p className="grid-subtext">
+                      I love solving problems and building things through code.
+                      Programming isn&apos;t just my profession—it&apos;s my
+                      passion. I enjoy exploring new technologies, and enhancing
+                      my skills.
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              <MyPassion className="absolute h-[28.5rem] w-[50rem]
-              max-lg:h-[20.5rem] max-lg:top-[9rem] max-lg:rotate-270 max-lg:w-[34rem]" />
+              <MyPassion
+                className="absolute h-[28.5rem] w-[50rem]
+                max-lg:h-[20.5rem] max-lg:top-[8.25rem] max-lg:rotate-270 max-lg:w-[34rem]"
+              />
             </div>
           </div>
         </div>
 
         <div
-          className="px-20  
-            flex flex-row gap-5
-             xl:px-0 xl:flex-col justify-evenly"
+          className=" 
+            flex flex-col items-center
+             xl:px-0 xl:flex-col 
+             max-xl:gap-10
+             xl:gap-4"
         >
-          <div
-            className={clsx("justify-self-center", {
-              // "order-2": isXL,
-              // "order-3 ": isTablet,
-            })}
-          >
-            <div className="flex flex-col max-w-[23rem]">
+          <div className="justify-self-center">
+            <div className="flex flex-col max-w-[23rem] items-center">
               <div className="pl-7 pt-8 pr-8 relative z-10 flex flex-col flex-wrap h-full">
                 <div className="rounded-3xl w-full  h-fit flex justify-center items-center">
                   <Globe
                     atmosphereColor={"green"}
                     ref={globeEl}
-                    height={326}
-                    width={326}
+                    height={300}
+                    width={300}
                     backgroundColor="rgba(0, 0, 0, 0)"
                     backgroundImageOpacity={0.5}
                     showAtmosphere
@@ -166,7 +169,11 @@ const About = () => {
                   />
                 </div>
 
-                <div className="px-4 pt-0 h-[12rem]">
+                <div
+                  className=" pt-0 h-[12rem]
+                max-lg:w-80 max-lg:pl-7
+                lg:px-6"
+                >
                   <p className="grid-headtext">
                     I’m very flexible with time zone communications & locations
                   </p>
@@ -177,27 +184,22 @@ const About = () => {
                 </div>
               </div>
 
-              <Timezone className="absolute " />
+              <Timezone
+                className="absolute 
+                w-89 
+                xl:top-30"
+              />
             </div>
           </div>
 
-          <div
-            className={clsx(
-              "justify-self-center content-center",
-              {
-                // "order-4": true,
-                // "order-3": isTablet,
-              }
-            )}
-          >
+          <div className="justify-self-center content-center">
             <div className="relative flex flex-row">
               <div className="left-22 bottom-3 absolute h-auto justify-center content-center flex flex-wrap gap-2 h-full">
                 <LinkedIn className="mt-[2px]" />
                 <Github />
                 <Gmail className="mt-[6px] ml-[2px]" />
               </div>
-
-              <ContactOptions className=" h-[22rem] w-[363px]" />
+              <ContactOptions className=" h-[24rem] w-[363px]" />
             </div>
           </div>
         </div>
