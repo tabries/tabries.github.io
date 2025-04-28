@@ -1,6 +1,19 @@
 <svg width="764" height="461" viewBox="0 0 764 461" fill="none" xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <rect x="0.256714" y="0.873535" width="763.679" height="459.647" fill="url(#pattern0_0_1)" />
+    <rect x="57.3565" y="165.398" width="60.0032" height="58.0676" rx="13.5491" stroke="#01E300"
+        stroke-width="1.93559" />
+    <rect x="126.07" y="165.398" width="60.0032" height="58.0676" rx="13.5491" stroke="#01E300"
+        stroke-width="1.93559" />
+    <rect x="126.07" y="232.176" width="60.0032" height="58.0676" rx="13.5491" stroke="#01E300"
+        stroke-width="1.93559" />
+    <rect x="194.783" y="165.398" width="60.0032" height="58.0676" rx="13.5491" stroke="#01E300"
+        stroke-width="1.93559" />
+    <rect x="147.361" y="183.787" width="8.71014" height="9.67793" fill="#01E300" />
+    <rect x="156.071" y="193.465" width="8.71014" height="9.67793" fill="#01E300" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M92.197 126.686L92.197 99.5879L91.2292 99.5879L91.2292 126.686H92.197ZM92.197 126.686H156.071H157.039V168.301H156.071V127.654L92.197 127.654L92.197 126.686Z"
+        fill="#01E300" />
     <rect x="290.594" y="21.1982" width="76.4556" height="418.087" fill="#387F4D" />
     <defs>
         <pattern id="pattern0_0_1" patternContentUnits="objectBoundingBox" width="1" height="1">
