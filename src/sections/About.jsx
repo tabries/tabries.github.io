@@ -25,7 +25,8 @@ const About = () => {
   }, []);
 
   return (
-    <section className="c-space my-20 mt-[50rem] relative pb-5" id="about">
+    <section className="mb-8 mt-[50rem] relative pb-5
+      lg:mb-20 c-space" id="about">
       <SectionTitle title="About Me" />
       <div
         className="flex flex-col
@@ -49,7 +50,7 @@ const About = () => {
               <div className="pl-8 pt-8 pr-8 relative z-10">
                 <img
                   src="assets/avatar.png"
-                  alt="grid-1"
+                  alt="Avatar"
                   className="w-full !h-[175px] h-fit object-contain"
                 />
 
@@ -75,7 +76,7 @@ const About = () => {
             <div className="flex flex-col max-w-[24rem] ">
               <div className="pl-7 pt-8 pr-8 relative z-10 flex flex-col flex-wrap gap-2 h-full">
                 <TechStack
-                  alt="grid-1"
+                  alt="Tech Stack"
                   className="w-full px-9 mt-8 h-[150px] w-[280px] h-fit object-contain"
                 />
 

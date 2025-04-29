@@ -104,7 +104,7 @@ const Hero = () => {
 
             <HeroCamera>
               <DemoComputer
-                texture={"/textures/project/helloWorldImGabo.mp4"}
+                texture={"/textures/helloWorldImGabo.mp4"}
               />
             </HeroCamera>
 

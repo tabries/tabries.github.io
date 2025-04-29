@@ -33,7 +33,7 @@ body {
 
 @layer utilities {
   .c-space {
-    @apply sm:px-10 px-5;
+    @apply md:px-10 md:px-5;
   }
 
   .head-text {
