@@ -100,6 +100,8 @@ export const workExperiences = [
     id: 1,
     title: "Self-Employed - Algorithmic Trading Developer",
     duration: "08/2024 - 03/2025",
+    iconSource: "",
+    iconClassname: "hidden",
     description: [
       "Implemented algorithmic trading strategies on Freqtrade for cryptocurrencies, using custom indicators such as RSI, MACD, and Bollinger Bands.",
       "Used hyperparameterization with Bayesian Optimization to maximize profitability of strategies.",
@@ -114,6 +116,8 @@ export const workExperiences = [
   {
     id: 2,
     title: "Caffeine.tv - Remote - Frontend Developer",
+    iconSource: "/assets/experiences/caffeine.png",
+    iconClassname: "!max-w-[28rem]",
     duration: "05/2022 - 07/2024",
     description: [
       "Led the adaptation of the site for mobile devices, enhancing user experience across key pages such as VOD (Video On Demand), streamer profiles, hashtag pages, and the lobby.",
@@ -126,6 +130,7 @@ export const workExperiences = [
     id: 3,
     title: "Digital Harbor International - Remote - Full-Stack Developer",
     duration: "06/2021 - 03/2022",
+    iconSource: "/assets/experiences/digital_harbor.png",
     description: [
       "Development of innovative features for a Forms Builder web application.",
       "Integration efforts to seamlessly connect the Forms User Interface with the backend, enabling the Dynamic Generation of forms created within the Builder project ensuring intuitive user interaction.",
@@ -137,6 +142,7 @@ export const workExperiences = [
     id: 4,
     title: "tuGerente.com - Santa Cruz, Bolivia - Full-Stack Developer",
     duration: "03/2020 - 03/2021",
+    iconSource: "/assets/experiences/tu_gerente.png",
     description: [
       "Development of innovative features for a Forms Builder web application.",
       "Integration efforts to seamlessly connect the Forms User Interface with the backend, enabling the Dynamic Generation of forms created within the Builder project ensuring intuitive user interaction.",
@@ -149,6 +155,7 @@ export const workExperiences = [
     id: 5,
     title: "Aguatec Bolivia Company - Bolivia - Electronic and Software Engineer",
     duration: "09/2018 - 09/2019",
+    iconSource: "/assets/experiences/aguatecd.png",
     description: [
       "Designed, developed, and implemented a wireless sensor network for monitoring soil moisture in uneven vineyard areas for Aguatec Bolivia.",
       "Programmed Atmel Microcontrollers and ESP8266 Wifi modules using C++ language.",
@@ -163,6 +170,7 @@ export const workExperiences = [
     id: 6,
     title: "iProject Partners | Telecel SA - BPM Development Engineer",
     duration: "05/2017 - 09/2018",
+    iconSource: "/assets/experiences/ippb.png",
     description: [
       "Implemented Business Process Management (BPM) solutions across different organizations, mostly with front-end technologies.",
       "Shared my expertise through teaching and conducting training sessions on BPM automation."

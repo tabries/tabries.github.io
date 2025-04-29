@@ -8,7 +8,7 @@ const ExperienceDuration = ({ date }) => {
         className="content-center border-4 border-dashed border-green-500 
         text-[28px] text-center 
         lg:text-[32px]
-        md:w-[44rem] xl:w-[50rem]"
+        md:w-[44rem] lg:w-[50rem]"
       >
         {date}
       </div>

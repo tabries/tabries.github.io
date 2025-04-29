@@ -2,6 +2,7 @@ import ExperienceDuration from "../components/ExperienceDuration.jsx";
 import ExperienceTitle from "../components/ExperienceTitle.jsx";
 import ExperienceDescription from "../components/ExperienceDescription.jsx";
 import ExperienceTechStack from "../components/ExperienceTechStack.jsx";
+import ExperienceIcon from "../components/ExperienceIcon.jsx";
 import { workExperiences } from "../constants/index.js";
 import SectionTitle from "../components/SectionTitle.jsx";
 
@@ -20,6 +21,7 @@ const Experience = () => {
           {workExperiences.map((experience, index) => (
             <div key={index}>
               <ExperienceDuration date={experience.duration} />
+              <ExperienceIcon src={experience.iconSource} className={experience.iconClassname}/>
               <ExperienceTitle title={experience.title} />
               <ExperienceDescription details={experience.description} />
               <ExperienceTechStack techStack={experience.techStack} />
