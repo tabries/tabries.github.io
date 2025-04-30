@@ -29,9 +29,9 @@ const About = () => {
       lg:mb-20 c-space" id="about">
       <SectionTitle title="About Me" />
       <div
-        className="flex flex-col
+        className="flex flex-col justify-center
         xl:flex-row
-        max-lg:gap-12
+        max-lg:gap-6
         xl:gap-4"
       >
         <div
@@ -46,7 +46,8 @@ const About = () => {
               col-span-1 row-span-1
               xl:row-span-2 xl:!content-start"
           >
-            <div className="flex flex-col max-w-[23rem]">
+            <div className="flex flex-col max-w-[23rem]
+              max-sm:max-w-80">
               <div className="pl-8 pt-8 pr-8 relative z-10">
                 <img
                   src="assets/avatar.png"
@@ -54,7 +55,8 @@ const About = () => {
                   className="w-full !h-[175px] h-fit object-contain"
                 />
 
-                <div className="px-7 pt-4">
+                <div className="px-7 pt-4
+                max-sm:px-1 ">
                   <p className="grid-headtext">Hi, I’m Gabriel Martínez</p>
                   <p className="grid-subtext">
                     With +5 years of experience, I have honed my skills in both
@@ -64,7 +66,8 @@ const About = () => {
                 </div>
               </div>
 
-              <AboutCard1 className="absolute h-[27.5rem]" />
+              <AboutCard1 className="absolute h-[27.5rem]
+              max-sm:max-w-80 " />
             </div>
           </div>
 
@@ -73,8 +76,10 @@ const About = () => {
             h-[27rem]
             xl:content-start"
           >
-            <div className="flex flex-col max-w-[24rem] ">
-              <div className="pl-7 pt-8 pr-8 relative z-10 flex flex-col flex-wrap gap-2 h-full">
+            <div className="flex flex-col max-w-[24rem] 
+              max-sm:max-w-80">
+              <div className="pl-7 pt-8 pr-8 relative z-10 flex flex-col flex-wrap gap-2 h-full
+              max-sm:px-2">
                 <TechStack
                   alt="Tech Stack"
                   className="w-full px-9 mt-8 h-[150px] w-[280px] h-fit object-contain"
@@ -92,6 +97,7 @@ const About = () => {
 
               <AboutCard2
                 className="absolute h-[28.5rem] top-3
+                max-sm:max-w-80 
                 lg:top-3
                 xl:top-[-0.75rem]"
               />
@@ -139,12 +145,13 @@ const About = () => {
         <div
           className=" 
             flex flex-col items-center
-             xl:px-0 xl:flex-col 
-             max-xl:gap-10
-             xl:gap-4"
+            xl:px-0 xl:flex-col 
+            max-xl:gap-0
+            xl:gap-4"
         >
           <div className="justify-self-center">
-            <div className="flex flex-col max-w-[23rem] items-center">
+            <div className="flex flex-col relative max-w-[23rem] items-center
+            max-sm:max-w-76">
               <div className="pl-7 pt-8 pr-8 relative z-10 flex flex-col flex-wrap h-full">
                 <div className="rounded-3xl w-full  h-fit flex justify-center items-center">
                   <Globe
@@ -171,9 +178,10 @@ const About = () => {
                 </div>
 
                 <div
-                  className=" pt-0 h-[12rem]
-                max-lg:w-80 max-lg:pl-7
-                lg:px-6"
+                  className="pt-0 h-[12rem]
+                  max-sm:max-w-70 max-sm:pl-6
+                  max-lg:w-80 max-lg:pl-7
+                  lg:px-6"
                 >
                   <p className="grid-headtext">
                     I’m very flexible with time zone communications & locations
@@ -187,15 +195,18 @@ const About = () => {
 
               <Timezone
                 className="absolute 
-                w-89 
+                w-89
+                max-sm:max-w-80
                 xl:top-30"
               />
             </div>
           </div>
 
-          <div className="justify-self-center content-center">
+          <div className="justify-self-center content-center
+          max-md:max-w-76">
             <div className="relative flex flex-row">
-              <div className="left-22 bottom-3 absolute h-auto justify-center content-center flex flex-wrap gap-2 h-full">
+              <div className="left-22 bottom-3 absolute h-auto justify-center content-center flex flex-wrap gap-2 h-full
+              max-md:left-17">
                 <LinkedIn className="mt-[2px]" />
                 <Github />
                 <Gmail className="mt-[6px] ml-[2px]" />

@@ -7,7 +7,7 @@ const Awards = () => {
       className="content-center c-space pb-20 mt-[5rem] relative"
       id="about"
     >
-      <SectionTitle title="Awards" className={""} />
+      <SectionTitle title="Awards" />
       <div
         className="flex flex-col h-full w-full items-center mt-12
           font-supermarioworld text-[#05FF4D]"

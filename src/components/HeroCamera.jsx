@@ -39,7 +39,7 @@ const HeroCamera = ({ children }) => {
       15.5 + scrollYOffset * positionOffsetZ,
     ];
 
-    easing.damp3(state.camera.position, targetPosition, 0.25, delta);
+    easing.damp3(state.camera.position, targetPosition, 0.15, delta);
 
     const [rotationOffsetX, rotationOffsetY, rotationOffsetZ] =
       heroCameraRotationOffset;
@@ -51,7 +51,7 @@ const HeroCamera = ({ children }) => {
         scrollYOffset * rotationOffsetY,
         scrollYOffset * rotationOffsetZ,
       ],
-      0.25,
+      0.15,
       delta
     );
   });

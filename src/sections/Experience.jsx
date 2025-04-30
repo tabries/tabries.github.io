@@ -12,7 +12,7 @@ const Experience = () => {
       className="content-center c-space relative pb-20"
       id="about"
     >
-      <SectionTitle title="Experience" className={""}/>
+      <SectionTitle title="Experience"/>
       <div className="flex flex-col gap-5 h-full">
         <div
           className="flex flex-col content-center flex-wrap items-center gap-12
