@@ -14,6 +14,7 @@ import Github from "/src/assets/icons/Github.svg?react";
 import Gmail from "/src/assets/icons/Gmail.svg?react";
 import Button from "../components/Button.jsx";
 import SectionTitle from "../components/SectionTitle.jsx";
+import { contact } from "../constants/index.js";
 
 const About = () => {
   const globeEl = useRef();
@@ -24,9 +25,18 @@ const About = () => {
     globeEl.current.controls().enableZoom = false;
   }, []);
 
+  const contactIcons = {
+    linkedin: { component: LinkedIn, className: "mt-[2px]" },
+    github: { component: Github },
+    gmail: { component: Gmail, className: "mt-[6px] ml-[2px]" },
+  };
+
   return (
-    <section className="mb-8 mt-[50rem] relative pb-5
-      lg:mb-20 c-space" id="about">
+    <section
+      className="mb-8 mt-[50rem] relative pb-5
+      lg:mb-20 c-space"
+      id="about"
+    >
       <SectionTitle title="About Me" />
       <div
         className="flex flex-col justify-center
@@ -46,8 +56,10 @@ const About = () => {
               col-span-1 row-span-1
               xl:row-span-2 xl:!content-start"
           >
-            <div className="flex flex-col max-w-[23rem]
-              max-sm:max-w-80">
+            <div
+              className="flex flex-col max-w-[23rem]
+              max-sm:max-w-80"
+            >
               <div className="pl-8 pt-8 pr-8 relative z-10">
                 <img
                   src="assets/avatar.png"
@@ -55,8 +67,10 @@ const About = () => {
                   className="w-full !h-[175px] h-fit object-contain"
                 />
 
-                <div className="px-7 pt-4
-                max-sm:px-1 ">
+                <div
+                  className="px-7 pt-4
+                max-sm:px-1 "
+                >
                   <p className="grid-headtext">Hi, I’m Gabriel Martínez</p>
                   <p className="grid-subtext">
                     With +5 years of experience, I have honed my skills in both
@@ -66,8 +80,10 @@ const About = () => {
                 </div>
               </div>
 
-              <AboutCard1 className="absolute h-[27.5rem]
-              max-sm:max-w-80 " />
+              <AboutCard1
+                className="absolute h-[27.5rem]
+              max-sm:max-w-80 "
+              />
             </div>
           </div>
 
@@ -76,10 +92,14 @@ const About = () => {
             h-[27rem]
             xl:content-start"
           >
-            <div className="flex flex-col max-w-[24rem] 
-              max-sm:max-w-80">
-              <div className="pl-7 pt-8 pr-8 relative z-10 flex flex-col flex-wrap gap-2 h-full
-              max-sm:px-2">
+            <div
+              className="flex flex-col max-w-[24rem] 
+              max-sm:max-w-80"
+            >
+              <div
+                className="pl-7 pt-8 pr-8 relative z-10 flex flex-col flex-wrap gap-2 h-full
+              max-sm:px-2"
+              >
                 <TechStack
                   alt="Tech Stack"
                   className="w-full px-9 mt-8 h-[150px] w-[280px] h-fit object-contain"
@@ -150,8 +170,10 @@ const About = () => {
             xl:gap-4"
         >
           <div className="justify-self-center">
-            <div className="flex flex-col relative max-w-[23rem] items-center
-            max-sm:max-w-76">
+            <div
+              className="flex flex-col relative max-w-[23rem] items-center
+            max-sm:max-w-76"
+            >
               <div className="pl-7 pt-8 pr-8 relative z-10 flex flex-col flex-wrap h-full">
                 <div className="rounded-3xl w-full  h-fit flex justify-center items-center">
                   <Globe
@@ -202,14 +224,30 @@ const About = () => {
             </div>
           </div>
 
-          <div className="justify-self-center content-center
-          max-md:max-w-76">
+          <div
+            className="justify-self-center content-center
+          max-md:max-w-76"
+          >
             <div className="relative flex flex-row">
-              <div className="left-22 bottom-3 absolute h-auto justify-center content-center flex flex-wrap gap-2 h-full
-              max-md:left-17">
-                <LinkedIn className="mt-[2px]" />
-                <Github />
-                <Gmail className="mt-[6px] ml-[2px]" />
+              <div
+                className="left-22 bottom-3 absolute h-auto justify-center content-center flex flex-wrap gap-2 h-full
+              max-md:left-17"
+              >
+                {contact.map((item) => {
+                  const { component: IconComponent, className } =
+                    contactIcons[item.icon.toLowerCase()];
+                  return (
+                    <a
+                      key={item.id}
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="z-10"
+                    >
+                      {IconComponent && <IconComponent className={className} />}
+                    </a>
+                  );
+                })}
               </div>
               <ContactOptions className=" h-[24rem] w-[363px]" />
             </div>
