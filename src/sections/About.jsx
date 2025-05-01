@@ -165,14 +165,15 @@ const About = () => {
         <div
           className=" 
             flex flex-col items-center
-            xl:px-0 xl:flex-col 
+            xl:px-0 
+            lg:max-xl:flex-row lg:max-xl:place-content-evenly lg:max-xl:flex-wrap
             max-xl:gap-0
             xl:gap-4"
         >
           <div className="justify-self-center">
             <div
-              className="flex flex-col relative max-w-[23rem] items-center
-            max-sm:max-w-76"
+              className="flex flex-col max-md:relative max-w-[23rem] items-center
+            max-md:max-w-76"
             >
               <div className="pl-7 pt-8 pr-8 relative z-10 flex flex-col flex-wrap h-full">
                 <div className="rounded-3xl w-full  h-fit flex justify-center items-center">
@@ -201,7 +202,7 @@ const About = () => {
 
                 <div
                   className="pt-0 h-[12rem]
-                  max-sm:max-w-70 max-sm:pl-6
+                  max-lg:max-w-70 max-lg:pl-6
                   max-lg:w-80 max-lg:pl-7
                   lg:px-6"
                 >
@@ -218,7 +219,7 @@ const About = () => {
               <Timezone
                 className="absolute 
                 w-89
-                max-sm:max-w-80
+                max-xl:max-w-80
                 xl:top-30"
               />
             </div>
@@ -226,12 +227,12 @@ const About = () => {
 
           <div
             className="justify-self-center content-center
-          max-md:max-w-76"
+          max-lg:max-w-76"
           >
             <div className="relative flex flex-row">
               <div
                 className="left-22 bottom-3 absolute h-auto justify-center content-center flex flex-wrap gap-2 h-full
-              max-md:left-17"
+              max-lg:left-17"
               >
                 {contact.map((item) => {
                   const { component: IconComponent, className } =
