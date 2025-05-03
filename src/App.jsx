@@ -10,8 +10,9 @@ import Awards from "./sections/Awards.jsx";
 const App = () => {
   return (
     <>
+      {/* <Navbar /> */}
       <main className="max-w-7xl mx-auto relative">
-        {/* <Navbar /> */}
+        
         <Hero />
         <About />
         <Experience />
@@ -25,7 +26,7 @@ const App = () => {
         
         */}
       </main>
-      <Footer />{" "}
+      <Footer />
     </>
   );
 };

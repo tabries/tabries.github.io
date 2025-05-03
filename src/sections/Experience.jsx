@@ -8,11 +8,8 @@ import SectionTitle from "../components/SectionTitle.jsx";
 
 const Experience = () => {
   return (
-    <section
-      className="content-center c-space relative pb-20"
-      id="about"
-    >
-      <SectionTitle title="Experience"/>
+    <section className="content-center c-space relative pb-20" id="experience">
+      <SectionTitle title="Experience" />
       <div className="flex flex-col gap-5 h-full">
         <div
           className="flex flex-col content-center flex-wrap items-center gap-12
@@ -21,7 +18,11 @@ const Experience = () => {
           {workExperiences.map((experience, index) => (
             <div key={index}>
               <ExperienceDuration date={experience.duration} />
-              <ExperienceIcon src={experience.iconSource} className={experience.iconClassname}/>
+              <ExperienceIcon
+                src={experience.iconSource}
+                className={experience.iconClassname}
+                bgClassname={experience.iconBgClassname}
+              />
               <ExperienceTitle title={experience.title} />
               <ExperienceDescription details={experience.description} />
               <ExperienceTechStack techStack={experience.techStack} />

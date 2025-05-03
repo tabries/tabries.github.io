@@ -26,6 +26,19 @@ export default {
         backgroundImage: {
           terminal: "url('/assets/terminal.png')",
         },
+
+        animation: {
+          steam: "steam 15s linear infinite",
+        },
+        keyframes: {
+          steam: {
+            "0%": { backgroundPosition: "0 0" },
+            "25%": { backgroundPosition: "150% 0" },
+            "50%": { backgroundPosition: "300% 0" },
+            "75%": { backgroundPosition: "150% 0" },
+            "100%": { backgroundPosition: "0 0" },
+          },
+        },
       },
     },
     plugins: [],

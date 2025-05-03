@@ -11,8 +11,8 @@ export const navLinks = [
   },
   {
     id: 3,
-    name: "Work",
-    href: "#work",
+    name: "Experience",
+    href: "#experience",
   },
   {
     id: 4,
@@ -116,8 +116,9 @@ export const workExperiences = [
   {
     id: 2,
     title: "Caffeine.tv - Remote - Frontend Developer",
-    iconSource: "/assets/experiences/caffeine.png",
-    iconClassname: "!max-w-[28rem]",
+    iconSource: "/assets/experiences/caffeineicon.png",
+    iconClassname: "!max-w-[18rem]",
+    iconBgClassname: "from-[#0000cf] via-[#0188ff] to-[#0000d2] blur-[25px]",
     duration: "05/2022 - 07/2024",
     description: [
       "Led the adaptation of the site for mobile devices, enhancing user experience across key pages such as VOD (Video On Demand), streamer profiles, hashtag pages, and the lobby.",
@@ -131,6 +132,8 @@ export const workExperiences = [
     title: "Digital Harbor International - Remote - Full-Stack Developer",
     duration: "06/2021 - 03/2022",
     iconSource: "/assets/experiences/digital_harbor.png",
+    iconClassname: "!max-w-[15rem]",
+    iconBgClassname: "from-[#b5106a] via-[#e1505a] to-[#e9754a] blur-[50px]",
     description: [
       "Development of innovative features for a Forms Builder web application.",
       "Integration efforts to seamlessly connect the Forms User Interface with the backend, enabling the Dynamic Generation of forms created within the Builder project ensuring intuitive user interaction.",
@@ -143,6 +146,7 @@ export const workExperiences = [
     title: "tuGerente.com - Santa Cruz, Bolivia - Full-Stack Developer",
     duration: "03/2020 - 03/2021",
     iconSource: "/assets/experiences/tu_gerente.png",
+    iconBgClassname: "from-[#941a23] via-[#a61a23] to-[#e3535b] blur-[30px]",
     description: [
       "Development of innovative features for a Forms Builder web application.",
       "Integration efforts to seamlessly connect the Forms User Interface with the backend, enabling the Dynamic Generation of forms created within the Builder project ensuring intuitive user interaction.",
@@ -156,6 +160,8 @@ export const workExperiences = [
     title: "Aguatec Bolivia Company - Bolivia - Electronic and Software Engineer",
     duration: "09/2018 - 09/2019",
     iconSource: "/assets/experiences/aguatecd.png",
+    iconClassname: "!max-w-[15rem]",
+    iconBgClassname: "from-[#019bd2] via-[#6ee157] to-[#003d59] blur-[30px]",
     description: [
       "Designed, developed, and implemented a wireless sensor network for monitoring soil moisture in uneven vineyard areas for Aguatec Bolivia.",
       "Programmed Atmel Microcontrollers and ESP8266 Wifi modules using C++ language.",
@@ -171,6 +177,8 @@ export const workExperiences = [
     title: "iProject Partners | Telecel SA - BPM Development Engineer",
     duration: "05/2017 - 09/2018",
     iconSource: "/assets/experiences/ippb.png",
+    iconClassname: "!max-w-[15rem]",
+    iconBgClassname: "from-[#aca6a2] via-[#d4b390] to-[#003d59] blur-[30px]",
     description: [
       "Implemented Business Process Management (BPM) solutions across different organizations, mostly with front-end technologies.",
       "Shared my expertise through teaching and conducting training sessions on BPM automation."
