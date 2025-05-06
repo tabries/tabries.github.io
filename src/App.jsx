@@ -10,7 +10,7 @@ import Awards from "./sections/Awards.jsx";
 const App = () => {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <main className="max-w-7xl mx-auto relative">
         
         <Hero />

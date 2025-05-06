@@ -5,7 +5,7 @@ const Awards = () => {
   return (
     <section
       className="content-center c-space pb-20 mt-[5rem] relative"
-      id="about"
+      id="awards"
     >
       <SectionTitle title="Awards" />
       <div

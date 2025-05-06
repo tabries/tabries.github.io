@@ -3,7 +3,7 @@ import SectionTitle from "../components/SectionTitle.jsx";
 
 const Education = () => {
   return (
-    <section className="content-center c-space relative" id="about">
+    <section className="content-center c-space relative" id="education">
       <SectionTitle title="Education" />
       <div
         className="flex flex-col h-full w-full items-center mt-12

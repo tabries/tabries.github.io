@@ -121,7 +121,7 @@ const Hero = () => {
         </Canvas>
       </div>
 
-      <div
+      {/* <div
         className="fixed bottom-14 left-0 right-0 w-full z-20 c-space"
         style={{ opacity: buttonOpacity }}
       >
@@ -132,7 +132,7 @@ const Hero = () => {
             containerClass="sm:w-fit w-full sm:min-w-96"
           />
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -175,8 +175,8 @@ const About = () => {
               className="flex flex-col max-md:relative max-w-[23rem] items-center
             max-md:max-w-76"
             >
-              <div className="pl-7 pt-8 pr-8 relative z-10 flex flex-col flex-wrap h-full">
-                <div className="rounded-3xl w-full  h-fit flex justify-center items-center">
+              <div className="pl-7 pt-8 pr-8 relative flex flex-col flex-wrap h-full">
+                <div className="rounded-3xl w-full z-10 h-fit flex justify-center items-center">
                   <Globe
                     atmosphereColor={"green"}
                     ref={globeEl}
@@ -201,7 +201,7 @@ const About = () => {
                 </div>
 
                 <div
-                  className="pt-0 h-[12rem]
+                  className="pt-0 h-[12rem] z-10
                   max-lg:max-w-70 max-lg:pl-6
                   max-lg:w-80 max-lg:pl-7
                   lg:px-6"
