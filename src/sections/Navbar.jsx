@@ -94,7 +94,7 @@ const Navbar = () => {
               {/* Hamburger button */}
               <div className="z-40 bg-black h-[4px] rounded-[3px] mb-[7px] transition-transform duration-500 peer-checked:translate-y-[11px] peer-checked:rotate-45"></div>
               <div className="z-40 bg-black h-[4px] rounded-[3px] mb-[7px] transition-transform duration-500 peer-checked:scale-0"></div>
-              <div className="z-40 bg-black h-[4px] rounded-[3px] transition-transform duration-500 peer-checked:-translate-y-[11px] peer-checked:-rotate-45"></div>
+              <div className="z-40 bg-black h-[4px] rounded-[3px] mb-[7px] transition-transform duration-500 peer-checked:-translate-y-[11px] peer-checked:-rotate-45"></div>
             </div>
           </label>
         </div>
