@@ -33,7 +33,8 @@ const Navbar = () => {
       if (
         checkboxContainerRef.current &&
         ev &&
-        !checkboxContainerRef.current.contains(ev.target) && ev.target.htmlFor !== "menu-toggle"
+        !checkboxContainerRef.current.contains(ev.target) &&
+        ev.target.htmlFor !== "menu-toggle"
       ) {
         checkboxRef.current.checked = false;
         setIsOpen(false);
@@ -48,7 +49,6 @@ const Navbar = () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, [isOpen]);
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,8 +73,10 @@ const Navbar = () => {
           <NavItems />
         </nav>
       </div>
-      <div className={`w-fit fixed right-[-0.5rem] top-[0.1rem] sm:right-1 sm:top-3 z-40 
-        ${scrollY > 250 ? "opacity-100" : "opacity-0 !right-[-100px]"} transition-[opacity,right] duration-500`}>
+      <div
+        className={`w-fit fixed right-[-0.5rem] top-[0.1rem] sm:right-1 sm:top-3 z-40 
+        ${scrollY > 250 ? "opacity-100" : "opacity-0 !right-[-100px]"} transition-[opacity,right] duration-500`}
+      >
         <div className="flex justify-end items-center py-5 mx-auto">
           <label
             htmlFor="menu-toggle"
@@ -99,7 +101,6 @@ const Navbar = () => {
           </label>
         </div>
       </div>
-
     </header>
   );
 };

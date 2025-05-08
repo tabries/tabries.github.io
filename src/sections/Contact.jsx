@@ -16,13 +16,15 @@ const Contact = () => {
     <section className="content-center c-space relative" id="contact">
       <SectionTitle title="Contact Me" />
       <div className="w-full mt-12 flex justify-center">
-        <div
-          className="font-supermarioworld text-[#05FF4D] h-100"
-        >
-          <ContactOptions className="z-0 rotate-90 absolute mt-[-30px] h-[22rem] w-[363px]
-          max-sm:max-w-75" />
-          <div className=" justify-center content-center flex flex-wrap gap-2 w-[370px] h-[280px]
-            max-sm:max-w-75">
+        <div className="font-supermarioworld text-[#05FF4D] h-100">
+          <ContactOptions
+            className="z-0 rotate-90 absolute mt-[-30px] h-[22rem] w-[363px]
+          max-sm:max-w-75"
+          />
+          <div
+            className=" justify-center content-center flex flex-wrap gap-2 w-[370px] h-[280px]
+            max-sm:max-w-75"
+          >
             {contact.map((item) => {
               const { component: IconComponent, className } =
                 contactIcons[item.icon.toLowerCase()];
@@ -39,7 +41,6 @@ const Contact = () => {
               );
             })}
           </div>
-          
         </div>
       </div>
     </section>

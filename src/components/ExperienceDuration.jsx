@@ -2,8 +2,10 @@ import Reticula1 from "/src/assets/icons/Reticula1.svg?react";
 
 const ExperienceDuration = ({ date }) => {
   return (
-    <div className="justify-self-center flex max-lg:mx-2 
-      max-sm:w-86 max-sm:px-1">
+    <div
+      className="justify-self-center flex max-lg:mx-2 
+      max-sm:w-86 max-sm:px-1"
+    >
       <Reticula1 className="md:w-[150px]" />
       <div
         className="content-center border-4 border-dashed border-green-500 

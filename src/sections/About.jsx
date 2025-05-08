@@ -1,7 +1,5 @@
 import { useEffect, useRef } from "react";
-import clsx from "clsx";
 import Globe from "react-globe.gl";
-import { useMediaQuery } from "react-responsive";
 import AboutCard1 from "/src/assets/icons/AboutCard1.svg?react";
 import AboutCard2 from "/src/assets/icons/AboutCard2.svg?react";
 import TechStack from "/src/assets/icons/TechStack.svg?react";

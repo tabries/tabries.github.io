@@ -31,7 +31,6 @@ export const navLinks = [
   },
 ];
 
-
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
   return {
     deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.12,
@@ -64,37 +63,37 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
         : isTablet
           ? [-11, -7, -10]
           : [-13, -13, -10],
-    
+
     perspectiveCameraPosition: isSmall
-    ? [-0.75, -0.45, 18.25]
-    : isMobile
       ? [-0.75, -0.45, 18.25]
-      : isTablet
+      : isMobile
         ? [-0.75, -0.45, 18.25]
-        : [0, 0, 30],
+        : isTablet
+          ? [-0.75, -0.45, 18.25]
+          : [0, 0, 30],
     perspectiveCameraRotation: isSmall
-    ? [0, 0, -1.57]
-    : isMobile
       ? [0, 0, -1.57]
-      : isTablet
+      : isMobile
         ? [0, 0, -1.57]
-        : [0, 0, 0],
+        : isTablet
+          ? [0, 0, -1.57]
+          : [0, 0, 0],
 
     heroCameraPosition: isSmall
-    ? [-1.9, -16.8, -10.0]
-    : isMobile
-      ? [-1.9, -16.2, -8.0]
-      : isTablet
-        ? [-1.9, -16.2, -2.0]
-        : [-2, -16.9, 0],
+      ? [-1.9, -16.8, -10.0]
+      : isMobile
+        ? [-1.9, -16.2, -8.0]
+        : isTablet
+          ? [-1.9, -16.2, -2.0]
+          : [-2, -16.9, 0],
 
     heroCameraPositionOffset: isSmall
-    ? [0.015, -0.024, 0.025]
-    : isMobile
-      ? [0.015, -0.02, 0.025]
-      : isTablet
-        ? [0.015, -0.023, 0.025]
-        : [0, -0.005, 0.02],
+      ? [0.015, -0.024, 0.025]
+      : isMobile
+        ? [0.015, -0.02, 0.025]
+        : isTablet
+          ? [0.015, -0.023, 0.025]
+          : [0, -0.005, 0.02],
     heroCameraRotationOffset: isSmall
       ? [0.0005, -0.00001, -0.00187]
       : isMobile
@@ -121,7 +120,15 @@ export const workExperiences = [
       "Developed a position sizing system based on the Kelly Criterion method and percentage risk per trade.",
       "Report automation with Telegram API and real-time notifications on trading signals.",
     ],
-    techStack: ["Python", "Freqtrade", "Pandas", "NumPy", "CCXT", "Binance API", "Docker"]
+    techStack: [
+      "Python",
+      "Freqtrade",
+      "Pandas",
+      "NumPy",
+      "CCXT",
+      "Binance API",
+      "Docker",
+    ],
   },
   {
     id: 2,
@@ -133,9 +140,16 @@ export const workExperiences = [
     description: [
       "Led the adaptation of the site for mobile devices, enhancing user experience across key pages such as VOD (Video On Demand), streamer profiles, hashtag pages, and the lobby.",
       "Worked on the development from scratch of the new SEO-optimized site using Next.js for server-side rendering and Tailwind for styling, achieving 100% responsiveness.",
-      "Added a lot of features, such as the Registration flow, Unlock flow for PPV content with Stripe payments, events for data analytics, and many others."
+      "Added a lot of features, such as the Registration flow, Unlock flow for PPV content with Stripe payments, events for data analytics, and many others.",
     ],
-    techStack: ["React.js", "Next.js", "Redux Saga", "Redux.js", "TypeScript", "Tailwind CSS"]
+    techStack: [
+      "React.js",
+      "Next.js",
+      "Redux Saga",
+      "Redux.js",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
   },
   {
     id: 3,
@@ -147,9 +161,19 @@ export const workExperiences = [
     description: [
       "Development of innovative features for a Forms Builder web application.",
       "Integration efforts to seamlessly connect the Forms User Interface with the backend, enabling the Dynamic Generation of forms created within the Builder project ensuring intuitive user interaction.",
-      "Collaborated closely with cross-functional teams to meet project milestones."
+      "Collaborated closely with cross-functional teams to meet project milestones.",
     ],
-    techStack: ["TypeScript", "Angular", "NestJS", "NgRx", "RxJs", "JavaScript", "HTML", "SCSS", "CSS"]
+    techStack: [
+      "TypeScript",
+      "Angular",
+      "NestJS",
+      "NgRx",
+      "RxJs",
+      "JavaScript",
+      "HTML",
+      "SCSS",
+      "CSS",
+    ],
   },
   {
     id: 4,
@@ -160,14 +184,25 @@ export const workExperiences = [
     description: [
       "Development of innovative features for a Forms Builder web application.",
       "Integration efforts to seamlessly connect the Forms User Interface with the backend, enabling the Dynamic Generation of forms created within the Builder project ensuring intuitive user interaction.",
-      "Collaborated closely with cross-functional teams to meet project milestones."
+      "Collaborated closely with cross-functional teams to meet project milestones.",
     ],
-    techStack: ["Python", "Django", "Django Rest Framework", "Django ORM", "Redis", "NodeJS", "PostgreSQL", "MySQL",
-                "ReactJS", "Redux"]
+    techStack: [
+      "Python",
+      "Django",
+      "Django Rest Framework",
+      "Django ORM",
+      "Redis",
+      "NodeJS",
+      "PostgreSQL",
+      "MySQL",
+      "ReactJS",
+      "Redux",
+    ],
   },
   {
     id: 5,
-    title: "Aguatec Bolivia Company - Bolivia - Electronic and Software Engineer",
+    title:
+      "Aguatec Bolivia Company - Bolivia - Electronic and Software Engineer",
     duration: "09/2018 - 09/2019",
     iconSource: "/assets/experiences/aguatecd.png",
     iconClassname: "!max-w-[15rem]",
@@ -178,9 +213,18 @@ export const workExperiences = [
       "Designed and built energy-efficient boards for wireless nodes.",
       "Developed electrical resistance sensors (gypsum blocks) to measure soil moisture.",
       "Created a web server based on Node-RED on Raspberry Pi (Raspbian OS) for real-time data monitoring.",
-      "Integrated InfluxDB and Grafana for real-time data visualization."
+      "Integrated InfluxDB and Grafana for real-time data visualization.",
     ],
-    techStack: ["C++", "Atmel ATMEGA328P", "ESP8266", "NodeMCU", "Raspberry Pi", "Node-RED", "Node.js", "JavaScript"]
+    techStack: [
+      "C++",
+      "Atmel ATMEGA328P",
+      "ESP8266",
+      "NodeMCU",
+      "Raspberry Pi",
+      "Node-RED",
+      "Node.js",
+      "JavaScript",
+    ],
   },
   {
     id: 6,
@@ -191,9 +235,16 @@ export const workExperiences = [
     iconBgClassname: "from-[#aca6a2] via-[#d4b390] to-[#003d59] blur-[30px]",
     description: [
       "Implemented Business Process Management (BPM) solutions across different organizations, mostly with front-end technologies.",
-      "Shared my expertise through teaching and conducting training sessions on BPM automation."
+      "Shared my expertise through teaching and conducting training sessions on BPM automation.",
     ],
-    techStack: ["JavaScript", "HTML", "CSS", "jQuery", "Nintex Forms", "Nintex Workflows"]
+    techStack: [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "jQuery",
+      "Nintex Forms",
+      "Nintex Workflows",
+    ],
   },
 ];
 

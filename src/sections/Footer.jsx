@@ -4,8 +4,6 @@ const Footer = () => {
       <div className="text-white-500">
         <p>COPYRIGHT © 2025 Gabriel Martinez.</p>
       </div>
-
-      
     </footer>
   );
 };
