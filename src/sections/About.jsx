@@ -71,9 +71,9 @@ const About = () => {
                 >
                   <p className="grid-headtext">Hi, I’m Gabriel Martínez</p>
                   <p className="grid-subtext">
-                    With more than 6 years of experience, I have honed my skills in both
-                    frontend and backend dev, creating reliable and scalable
-                    products with the best user experience.
+                    With more than 6 years of experience, I have honed my skills
+                    in both frontend and backend dev, creating reliable and
+                    scalable products with the best user experience.
                   </p>
                 </div>
               </div>
@@ -142,10 +142,20 @@ const About = () => {
                     max-lg:top-20 max-lg:w-60"
                   >
                     <p className="grid-headtext">Driven by Code</p>
-                    <p className="grid-subtext">
-                    I’m passionate about building software that solves real problems and makes people’s lives easier. 
-                    From designing clean, efficient code to constantly learning new technologies, I enjoy every part of the development process. 
-                    What drives me most is the opportunity to create, collaborate, and contribute to meaningful projects that have an impact.
+                    <p className="grid-subtext lg:hidden">
+                      I love solving problems and building things through code.
+                      Programming isn&apos;t just my profession—it&apos;s my
+                      passion. I enjoy exploring new technologies, and enhancing
+                      my skills.
+                    </p>
+                    <p className="grid-subtext max-lg:hidden">
+                      I’m passionate about building software that solves real
+                      problems and makes people’s lives easier. From designing
+                      clean, efficient code to constantly learning new
+                      technologies, I enjoy every part of the development
+                      process. What drives me most is the opportunity to create,
+                      collaborate, and contribute to meaningful projects that
+                      have an impact.
                     </p>
                   </div>
                 </div>
@@ -203,11 +213,11 @@ const About = () => {
                   max-lg:w-80 max-lg:pl-7
                   lg:px-6"
                 >
-                  <p className="grid-headtext">
-                  Time Zone Advantage
-                  </p>
+                  <p className="grid-headtext">Time Zone Advantage</p>
                   <p className="grid-subtext">
-                  Located in GMT-4, I overlap well with U.S. time zones, enabling smooth, real-time collaboration with American teams.
+                    Located in GMT-4, I overlap well with U.S. time zones,
+                    enabling smooth, real-time collaboration with American
+                    teams.
                   </p>
                 </div>
               </div>
