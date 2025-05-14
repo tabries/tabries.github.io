@@ -71,7 +71,7 @@ const About = () => {
                 >
                   <p className="grid-headtext">Hi, I’m Gabriel Martínez</p>
                   <p className="grid-subtext">
-                    With +5 years of experience, I have honed my skills in both
+                    With more than 6 years of experience, I have honed my skills in both
                     frontend and backend dev, creating reliable and scalable
                     products with the best user experience.
                   </p>
@@ -141,12 +141,11 @@ const About = () => {
                     className="w-[284px] relative lg:bottom-[22px] 
                     max-lg:top-20 max-lg:w-60"
                   >
-                    <p className="grid-headtext">My Passion for Coding</p>
+                    <p className="grid-headtext">Driven by Code</p>
                     <p className="grid-subtext">
-                      I love solving problems and building things through code.
-                      Programming isn&apos;t just my profession—it&apos;s my
-                      passion. I enjoy exploring new technologies, and enhancing
-                      my skills.
+                    I’m passionate about building software that solves real problems and makes people’s lives easier. 
+                    From designing clean, efficient code to constantly learning new technologies, I enjoy every part of the development process. 
+                    What drives me most is the opportunity to create, collaborate, and contribute to meaningful projects that have an impact.
                     </p>
                   </div>
                 </div>
@@ -205,11 +204,10 @@ const About = () => {
                   lg:px-6"
                 >
                   <p className="grid-headtext">
-                    I’m very flexible with time zone communications & locations
+                  Time Zone Advantage
                   </p>
                   <p className="grid-subtext">
-                    I&apos;m based in Santa Cruz, Bolivia and open to remote
-                    work worldwide.
+                  Located in GMT-4, I overlap well with U.S. time zones, enabling smooth, real-time collaboration with American teams.
                   </p>
                 </div>
               </div>
