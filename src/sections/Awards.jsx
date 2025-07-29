@@ -1,10 +1,10 @@
-import { awards } from "../constants/index.js";
+import { awards } from "../constants";
 import SectionTitle from "../components/SectionTitle.jsx";
 
 const Awards = () => {
   return (
     <section
-      className="content-center c-space pb-20 mt-[5rem] relative"
+      className="content-center md:px-10 pb-20 mt-[5rem] relative"
       id="awards"
     >
       <SectionTitle title="Awards" />

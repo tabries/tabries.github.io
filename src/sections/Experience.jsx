@@ -3,12 +3,12 @@ import ExperienceTitle from "../components/ExperienceTitle.jsx";
 import ExperienceDescription from "../components/ExperienceDescription.jsx";
 import ExperienceTechStack from "../components/ExperienceTechStack.jsx";
 import ExperienceIcon from "../components/ExperienceIcon.jsx";
-import { workExperiences } from "../constants/index.js";
+import { workExperiences } from "../constants";
 import SectionTitle from "../components/SectionTitle.jsx";
 
 const Experience = () => {
   return (
-    <section className="content-center c-space relative pb-20" id="experience">
+    <section className="content-center md:px-10 relative pb-20" id="experience">
       <SectionTitle title="Experience" />
       <div className="flex flex-col gap-5 h-full">
         <div

@@ -10,9 +10,8 @@ import MyPassionSeparator from "/src/assets/icons/MyPassionSeparator.svg?react";
 import LinkedIn from "/src/assets/icons/LinkedIn.svg?react";
 import Github from "/src/assets/icons/Github.svg?react";
 import Gmail from "/src/assets/icons/Gmail.svg?react";
-import Button from "../components/Button.jsx";
 import SectionTitle from "../components/SectionTitle.jsx";
-import { contact } from "../constants/index.js";
+import { contact } from "../constants";
 
 const About = () => {
   const globeEl = useRef();
@@ -32,7 +31,7 @@ const About = () => {
   return (
     <section
       className="mb-8 mt-[50rem] relative pb-5
-      lg:mb-20 c-space"
+      lg:mb-20 md:px-10"
       id="about"
     >
       <SectionTitle title="About Me" />
@@ -58,19 +57,23 @@ const About = () => {
               className="flex flex-col max-w-[23rem]
               max-sm:max-w-80"
             >
-              <div className="pl-8 pt-8 pr-8 relative z-10">
+              <div className="ml-8 mt-8 mr-8 relative z-10 justify-items-center">
                 <img
+                  data-blobity
+                  data-blobity-offset-y="10"
                   src="assets/avatar.png"
                   alt="Avatar"
-                  className="w-full !h-[175px] h-fit object-contain"
+                  className="h-[175px] object-contain"
                 />
 
                 <div
-                  className="px-7 pt-4
-                max-sm:px-1 "
+                  className="mx-7 mt-4
+                max-sm:mx-1 "
                 >
-                  <p className="grid-headtext">Hi, I’m Gabriel Martínez</p>
-                  <p className="grid-subtext">
+                  <p className="text-xl font-semibold mb-2 text-white font-ubuntumono" data-blobity>
+                    Hi, I'm Gabriel Martínez
+                  </p>
+                  <p className="text-[#afb0b6] text-base font-ubuntumono" data-blobity>
                     With more than 6 years of experience, I have honed my skills
                     in both frontend and backend dev, creating reliable and
                     scalable products with the best user experience.
@@ -79,8 +82,11 @@ const About = () => {
               </div>
 
               <AboutCard1
+                data-blobity
+                data-blobity-offset-y="10"
+                data-blobity-offset-x="0"
                 className="absolute h-[27.5rem]
-              max-sm:max-w-80 "
+                max-sm:max-w-80"
               />
             </div>
           </div>
@@ -95,17 +101,19 @@ const About = () => {
               max-sm:max-w-80"
             >
               <div
-                className="pl-7 pt-8 pr-8 relative z-10 flex flex-col flex-wrap gap-2 h-full
+                className="ml-7 mt-8 mr-8 relative z-10 flex flex-col flex-wrap gap-2 h-full
               max-sm:px-2"
               >
                 <TechStack
                   alt="Tech Stack"
-                  className="w-full px-9 mt-8 h-[150px] w-[280px] h-fit object-contain"
+                  className="w-full px-9 mt-8 h-fit object-contain"
                 />
 
-                <div className="pl-10 pr-10 pt-4">
-                  <p className="grid-headtext">Tech Stack</p>
-                  <p className="grid-subtext">
+                <div className="ml-10 mr-10 pt-4">
+                  <p className="text-xl font-semibold mb-2 text-white font-ubuntumono" data-blobity>
+                    Tech Stack
+                  </p>
+                  <p className="text-[#afb0b6] text-base font-ubuntumono" data-blobity>
                     I specialize in a variety of languages, frameworks, and
                     tools that allow me to build robust and scalable
                     applications
@@ -114,6 +122,9 @@ const About = () => {
               </div>
 
               <AboutCard2
+                data-blobity
+                data-blobity-offset-y="10"
+                data-blobity-offset-x="0"
                 className="absolute h-[28.5rem] top-3
                 max-sm:max-w-80 
                 lg:top-3
@@ -128,10 +139,10 @@ const About = () => {
             xl:row-span-3
             max-lg:w-[328px] max-lg:h-[544px]"
           >
-            <div className="grid-container items-center">
+            <div className="w-full h-full sm:pb-7 flex flex-col gap-5 items-center">
               <div
                 className=" align-self-center z-10 flex flex-row flex-nowrap gap-0 h-full
-                lg:pl-7 lg:pt-8 lg:pr-8"
+                lg:pl-7 lg:mt-8 lg:pr-8"
               >
                 <div
                   className="flex flex-col
@@ -141,16 +152,17 @@ const About = () => {
                     className="w-[284px] relative lg:bottom-[22px] 
                     max-lg:top-20 max-lg:w-60"
                   >
-                    <p className="grid-headtext">Driven by Code</p>
-                    <p className="grid-subtext lg:hidden">
-                      I love solving problems and building things through code.
-                      Programming isn&apos;t just my profession—it&apos;s my
-                      passion. I enjoy exploring new technologies, and enhancing
-                      my skills.
+                    <p className="text-xl font-semibold mb-2 text-white font-ubuntumono" data-blobity>
+                      Driven by Code
                     </p>
-                    <p className="grid-subtext max-lg:hidden">
-                      I’m passionate about building software that solves real
-                      problems and makes people’s lives easier. From designing
+                    <p className="text-[#afb0b6] text-base font-ubuntumono lg:hidden" data-blobity>
+                      I love solving problems and building things through code.
+                      Programming isn't just my profession—it's my passion. I
+                      enjoy exploring new technologies, and enhancing my skills.
+                    </p>
+                    <p className="text-[#afb0b6] text-base font-ubuntumono max-lg:hidden" data-blobity>
+                      I'm passionate about building software that solves real
+                      problems and makes people's lives easier. From designing
                       clean, efficient code to constantly learning new
                       technologies, I enjoy every part of the development
                       process. What drives me most is the opportunity to create,
@@ -162,6 +174,7 @@ const About = () => {
               </div>
 
               <MyPassion
+                data-blobity
                 className="absolute h-[28.5rem] w-[50rem]
                 max-lg:h-[20.5rem] max-lg:top-[8.25rem] max-lg:rotate-270 max-lg:w-[34rem]"
               />
@@ -209,12 +222,14 @@ const About = () => {
 
                 <div
                   className="pt-0 h-[12rem] z-10
-                  max-lg:max-w-70 max-lg:pl-6
+                  max-lg:max-w-70 
                   max-lg:w-80 max-lg:pl-7
                   lg:px-6"
                 >
-                  <p className="grid-headtext">Time Zone Advantage</p>
-                  <p className="grid-subtext">
+                  <p className="text-xl font-semibold mb-2 text-white font-ubuntumono" data-blobity>
+                    Time Zone Advantage
+                  </p>
+                  <p className="text-[#afb0b6] text-base font-ubuntumono" data-blobity>
                     Located in GMT-4, I overlap well with U.S. time zones,
                     enabling smooth, real-time collaboration with American
                     teams.
@@ -223,6 +238,9 @@ const About = () => {
               </div>
 
               <Timezone
+                data-blobity
+                data-blobity-offset-y="2"
+                data-blobity-offset-x="0"
                 className="absolute 
                 w-89
                 max-xl:max-w-80
@@ -237,7 +255,7 @@ const About = () => {
           >
             <div className="relative flex flex-row">
               <div
-                className="left-22 bottom-3 absolute h-auto justify-center content-center flex flex-wrap gap-2 h-full
+                className="left-22 bottom-3 absolute justify-center content-center flex flex-wrap gap-2 h-full
               max-lg:left-17"
               >
                 {contact.map((item) => {
@@ -245,6 +263,7 @@ const About = () => {
                     contactIcons[item.icon.toLowerCase()];
                   return (
                     <a
+                      data-blobity
                       key={item.id}
                       href={item.link}
                       target="_blank"
@@ -256,7 +275,12 @@ const About = () => {
                   );
                 })}
               </div>
-              <ContactOptions className=" h-[24rem] w-[363px]" />
+              <ContactOptions
+                data-blobity
+                data-blobity-offset-y="6"
+                data-blobity-offset-x="2"
+                className=" h-[24rem] w-[363px]"
+              />
             </div>
           </div>
         </div>

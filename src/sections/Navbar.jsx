@@ -1,14 +1,14 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 
-import { navLinks } from "../constants/index.js";
+import { navLinks } from "../constants";
 
 const NavItems = () => (
-  <ul className="nav-ul text-center h-full justify-center">
+  <ul className="flex flex-col items-center gap-4 md:gap-6 relative z-20 text-center h-full justify-center">
     {navLinks.map((item) => (
-      <li key={item.id} className="nav-li">
+      <li key={item.id} className="text-neutral-400 hover:text-white font-generalsans hover:bg-black-500 w-full rounded-md py-2 px-5">
         <a
           href={item.href}
-          className="nav-li_a font-supermarioworld text-[#05FF4D] !text-[26px]"
+          className="text-lg md:text-base hover:text-white transition-colors w-full block font-supermarioworld text-[#05FF4D] !text-[26px]"
         >
           {item.name}
         </a>
@@ -67,7 +67,7 @@ const Navbar = () => {
     >
       {/* Sidebar menu */}
       <div
-        className={`h-full nav-sidebar ${isOpen ? "opacity-100 max-h-screen" : "opacity-0 max-h-0"} transition-[opacity] duration-500 overflow-hidden`}
+        className={`h-full absolute left-0 right-0 bg-black-200 backdrop-blur-sm transition-all duration-300 ease-in-out  z-20 mx-auto ${isOpen ? "opacity-100 max-h-screen" : "opacity-0 max-h-0"} transition-[opacity] duration-500 overflow-hidden`}
       >
         <nav className="p-5 h-full">
           <NavItems />

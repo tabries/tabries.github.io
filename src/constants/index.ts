@@ -283,3 +283,16 @@ export const contact = [
     link: "mailto:gamartinezayala@gmail.com?Subject=Job%20Oportunity",
   },
 ];
+
+export const initialBlobityOptions = {
+  licenseKey: "opensource",
+  focusableElementsOffsetX: 12,
+  focusableElementsOffsetY: 2,
+  invert: true,
+  focusableElements:
+    "[data-blobity], a:not([data-no-blobity]), button:not([data-no-blobity]), [data-blobity-tooltip]",
+  opacity: 1,
+  fontColor: "#08233b",
+  zIndex: 1000,
+  magnetic: true,
+};

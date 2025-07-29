@@ -6,7 +6,7 @@ import { PerspectiveCamera } from "@react-three/drei";
 
 import CanvasLoader from "../components/Loading.jsx";
 import HeroCamera from "../components/HeroCamera.jsx";
-import { calculateSizes } from "../constants/index.js";
+import { calculateSizes } from "../constants";
 import DemoComputer from "../components/DemoComputer.jsx";
 
 const Hero = () => {

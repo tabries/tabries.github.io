@@ -1,4 +1,4 @@
-import { contact } from "../constants/index.js";
+import { contact } from "../constants";
 import SectionTitle from "../components/SectionTitle.jsx";
 import LinkedIn from "/src/assets/icons/LinkedIn.svg?react";
 import Github from "/src/assets/icons/Github.svg?react";
@@ -13,7 +13,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="content-center c-space relative" id="contact">
+    <section className="content-center md:px-10 relative" id="contact">
       <SectionTitle title="Contact Me" />
       <div className="w-full mt-12 flex justify-center">
         <div className="font-supermarioworld text-[#05FF4D] h-100">

@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import { easing } from "maath";
 import { useMediaQuery } from "react-responsive";
-import { calculateSizes } from "../constants/index.js";
+import { calculateSizes } from "../constants";
 
 const HeroCamera = ({ children }) => {
   const group = useRef();
