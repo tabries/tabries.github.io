@@ -5,10 +5,10 @@ import { navLinks } from "../constants";
 const NavItems = () => (
   <ul className="flex flex-col items-center gap-4 md:gap-6 relative z-20 text-center h-full justify-center">
     {navLinks.map((item) => (
-      <li key={item.id} className="text-neutral-400 hover:text-white font-generalsans hover:bg-black-500 w-full rounded-md py-2 px-5">
+      <li key={item.id} className="text-neutral-400  font-generalsans  w-full rounded-md py-2 px-5">
         <a
           href={item.href}
-          className="text-lg md:text-base hover:text-white transition-colors w-full block font-supermarioworld text-[#05FF4D] !text-[26px]"
+          className="text-lg md:text-base  transition-colors w-full block font-supermarioworld text-[#05FF4D] !text-[26px]"
         >
           {item.name}
         </a>
