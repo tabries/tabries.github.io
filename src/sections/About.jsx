@@ -61,6 +61,7 @@ const About = () => {
                 <img
                   data-blobity
                   data-blobity-offset-y="10"
+                  data-blobity-magnetic="false"
                   src="assets/avatar.png"
                   alt="Avatar"
                   className="h-[175px] object-contain"
@@ -70,10 +71,18 @@ const About = () => {
                   className="mx-7 mt-4
                 max-sm:mx-1 "
                 >
-                  <p className="text-xl font-semibold mb-2 text-white font-ubuntumono" data-blobity>
+                  <p
+                    className="text-xl font-semibold mb-2 text-white font-ubuntumono"
+                    data-blobity
+                    data-blobity-magnetic="false"
+                  >
                     Hi, I'm Gabriel Martínez
                   </p>
-                  <p className="text-[#afb0b6] text-base font-ubuntumono" data-blobity>
+                  <p
+                    className="text-[#afb0b6] text-base font-ubuntumono"
+                    data-blobity
+                    data-blobity-magnetic="false"
+                  >
                     With more than 6 years of experience, I have honed my skills
                     in both frontend and backend dev, creating reliable and
                     scalable products with the best user experience.
@@ -82,9 +91,6 @@ const About = () => {
               </div>
 
               <AboutCard1
-                data-blobity
-                data-blobity-offset-y="10"
-                data-blobity-offset-x="0"
                 className="absolute h-[27.5rem]
                 max-sm:max-w-80"
               />
@@ -110,10 +116,18 @@ const About = () => {
                 />
 
                 <div className="ml-10 mr-10 pt-4">
-                  <p className="text-xl font-semibold mb-2 text-white font-ubuntumono" data-blobity>
+                  <p
+                    className="text-xl font-semibold mb-2 text-white font-ubuntumono"
+                    data-blobity
+                    data-blobity-magnetic="false"
+                  >
                     Tech Stack
                   </p>
-                  <p className="text-[#afb0b6] text-base font-ubuntumono" data-blobity>
+                  <p
+                    className="text-[#afb0b6] text-base font-ubuntumono"
+                    data-blobity
+                    data-blobity-magnetic="false"
+                  >
                     I specialize in a variety of languages, frameworks, and
                     tools that allow me to build robust and scalable
                     applications
@@ -122,9 +136,6 @@ const About = () => {
               </div>
 
               <AboutCard2
-                data-blobity
-                data-blobity-offset-y="10"
-                data-blobity-offset-x="0"
                 className="absolute h-[28.5rem] top-3
                 max-sm:max-w-80 
                 lg:top-3
@@ -152,15 +163,27 @@ const About = () => {
                     className="w-[284px] relative lg:bottom-[22px] 
                     max-lg:top-20 max-lg:w-60"
                   >
-                    <p className="text-xl font-semibold mb-2 text-white font-ubuntumono" data-blobity>
+                    <p
+                      className="text-xl font-semibold mb-2 text-white font-ubuntumono"
+                      data-blobity
+                      data-blobity-magnetic="false"
+                    >
                       Driven by Code
                     </p>
-                    <p className="text-[#afb0b6] text-base font-ubuntumono lg:hidden" data-blobity>
+                    <p
+                      className="text-[#afb0b6] text-base font-ubuntumono lg:hidden"
+                      data-blobity
+                      data-blobity-magnetic="false"
+                    >
                       I love solving problems and building things through code.
                       Programming isn't just my profession—it's my passion. I
                       enjoy exploring new technologies, and enhancing my skills.
                     </p>
-                    <p className="text-[#afb0b6] text-base font-ubuntumono max-lg:hidden" data-blobity>
+                    <p
+                      className="text-[#afb0b6] text-base font-ubuntumono max-lg:hidden"
+                      data-blobity
+                      data-blobity-magnetic="false"
+                    >
                       I'm passionate about building software that solves real
                       problems and makes people's lives easier. From designing
                       clean, efficient code to constantly learning new
@@ -174,7 +197,6 @@ const About = () => {
               </div>
 
               <MyPassion
-                data-blobity
                 className="absolute h-[28.5rem] w-[50rem]
                 max-lg:h-[20.5rem] max-lg:top-[8.25rem] max-lg:rotate-270 max-lg:w-[34rem]"
               />
@@ -226,10 +248,17 @@ const About = () => {
                   max-lg:w-80 max-lg:pl-7
                   lg:px-6"
                 >
-                  <p className="text-xl font-semibold mb-2 text-white font-ubuntumono" data-blobity>
+                  <p
+                    className="text-xl font-semibold mb-2 text-white font-ubuntumono"
+                    data-blobity
+                    data-blobity-magnetic="false"
+                  >
                     Time Zone Advantage
                   </p>
-                  <p className="text-[#afb0b6] text-base font-ubuntumono" data-blobity>
+                  <p
+                    className="text-[#afb0b6] text-base font-ubuntumono"
+                    data-blobity
+                  >
                     Located in GMT-4, I overlap well with U.S. time zones,
                     enabling smooth, real-time collaboration with American
                     teams.
@@ -238,9 +267,6 @@ const About = () => {
               </div>
 
               <Timezone
-                data-blobity
-                data-blobity-offset-y="2"
-                data-blobity-offset-x="0"
                 className="absolute 
                 w-89
                 max-xl:max-w-80
@@ -264,6 +290,8 @@ const About = () => {
                   return (
                     <a
                       data-blobity
+                      data-blobity-offset-x="2"
+                      data-blobity-magnetic="false"
                       key={item.id}
                       href={item.link}
                       target="_blank"
@@ -275,12 +303,7 @@ const About = () => {
                   );
                 })}
               </div>
-              <ContactOptions
-                data-blobity
-                data-blobity-offset-y="6"
-                data-blobity-offset-x="2"
-                className=" h-[24rem] w-[363px]"
-              />
+              <ContactOptions className=" h-[24rem] w-[363px]" />
             </div>
           </div>
         </div>

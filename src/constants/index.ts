@@ -107,32 +107,29 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    title: "Self-Employed - Algorithmic Trading Developer",
+    title: "Venu Sports - Remote - Senior Software Engineer (Backend-focused)",
     duration: "08/2024 - 03/2025",
     iconSource: "",
     iconClassname: "hidden",
     description: [
-      "Implemented algorithmic trading strategies on Freqtrade for cryptocurrencies, using custom indicators such as RSI, MACD, and Bollinger Bands.",
-      "Used hyperparameterization with Bayesian Optimization to maximize profitability of strategies.",
-      "Deployed bots on Linux servers with Docker and Freqtrade, ensuring 24/7 execution without interruptions.",
-      "Configured connectors with Binance, KuCoin, and Bybit using CCXT to obtain real-time market data.",
-      "Implemented Dynamic Stop-Loss and Trailing Stop strategies to minimize losses in volatile markets.",
-      "Developed a position sizing system based on the Kelly Criterion method and percentage risk per trade.",
-      "Report automation with Telegram API and real-time notifications on trading signals.",
+      "Enhanced performance and scalability of content discovery APIs, improving response times and user engagement across the Venu Sports platform.",
+      "Led the integration of an AI-powered chatbot into the live streaming experience, enabling real-time user interaction and support.",
+      "Designed and implemented catch-up functionality, allowing users to replay missed live sports events, significantly enriching the platform’s user experience and retention metrics.",
     ],
     techStack: [
+      "Go",
+      "Rails",
       "Python",
-      "Freqtrade",
-      "Pandas",
-      "NumPy",
-      "CCXT",
-      "Binance API",
-      "Docker",
+      "Kafka",
+      "MySql",
+      "Postgres",
+      "Redis",
+      "Open Search",
     ],
   },
   {
     id: 2,
-    title: "Caffeine.tv - Remote - Full-Stack Developer",
+    title: "Caffeine.tv - Remote - Senior Software Engineer (Frontend-focused)",
     iconSource: "/assets/experiences/caffeineicon.png",
     iconClassname: "!max-w-[18rem]",
     iconBgClassname: "from-[#0000cf] via-[#0188ff] to-[#0000d2] blur-[25px]",
@@ -154,7 +151,8 @@ export const workExperiences = [
   },
   {
     id: 3,
-    title: "Digital Harbor International - Remote - Full-Stack Developer",
+    title:
+      "Digital Harbor International - Remote - Software Engineer (Backend-focused)",
     duration: "06/2021 - 03/2022",
     iconSource: "/assets/experiences/digital_harbor.png",
     iconClassname: "!max-w-[15rem]",
@@ -178,7 +176,8 @@ export const workExperiences = [
   },
   {
     id: 4,
-    title: "tuGerente.com - Santa Cruz, Bolivia - Full-Stack Developer",
+    title:
+      "tuGerente.com - Santa Cruz, Bolivia - Full-Stack Developer (Backend-focused)",
     duration: "03/2020 - 03/2021",
     iconSource: "/assets/experiences/tu_gerente.png",
     iconBgClassname: "from-[#941a23] via-[#a61a23] to-[#e3535b] blur-[30px]",
@@ -229,7 +228,8 @@ export const workExperiences = [
   },
   {
     id: 6,
-    title: "iProject Partners | Telecel SA - BPM Development Engineer",
+    title:
+      "iProject Partners | Telecel SA - BPM Development Engineer (Backend-focused)",
     duration: "05/2017 - 09/2018",
     iconSource: "/assets/experiences/ippb.png",
     iconClassname: "!max-w-[15rem]",
@@ -237,10 +237,24 @@ export const workExperiences = [
     description: [
       "I developed and deployed Business Process Management (BPM) solutions using Microsoft SharePoint, leveraging JavaScript, C#, and the SharePoint REST API. My work included multi-tier enterprise applications for clients like YPFB (ODS Source Loading Tool) and Tigo Bolivia, where I automated key processes such as the management of Tigo Money correspondents and import cost tracking.",
       "I led the creation of critical workflow systems like Concept to Market (C2M) and Digital Voucher (B2C). These efforts involved developing RESTful APIs with .NET, including .NET Core, MVC, and Webforms, and documenting interfaces using Swagger. I also designed relational schemas and performed database operations with MS SQL Server 2012–2016 to support the backend logic.",
-      "Beyond development, I conducted internal BPM automation training sessions and collaborated closely with cross-functional teams using DevOps tools like Git, Jira, Confluence, and Jenkins. Additionally, I gained familiarity with messaging queue systems such as Solace to support asynchronous communication needs within complex workflows."
+      "Beyond development, I conducted internal BPM automation training sessions and collaborated closely with cross-functional teams using DevOps tools like Git, Jira, Confluence, and Jenkins. Additionally, I gained familiarity with messaging queue systems such as Solace to support asynchronous communication needs within complex workflows.",
     ],
     techStack: [
-      "C#", ".NET", ".NET Core", "WebForms", "JavaScript", "jQuery", "MS SQL Server", "Swagger", "Git", "Jenkins", "Jira", "Confluence", "Nintex", "SharePoint REST API", "Solace",
+      "C#",
+      ".NET",
+      ".NET Core",
+      "WebForms",
+      "JavaScript",
+      "jQuery",
+      "MS SQL Server",
+      "Swagger",
+      "Git",
+      "Jenkins",
+      "Jira",
+      "Confluence",
+      "Nintex",
+      "SharePoint REST API",
+      "Solace",
     ],
   },
 ];

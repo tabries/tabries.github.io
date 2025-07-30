@@ -5,7 +5,10 @@ import { navLinks } from "../constants";
 const NavItems = () => (
   <ul className="flex flex-col items-center gap-4 md:gap-6 relative z-20 text-center h-full justify-center">
     {navLinks.map((item) => (
-      <li key={item.id} className="text-neutral-400  font-generalsans  w-full rounded-md py-2 px-5">
+      <li
+        key={item.id}
+        className="text-neutral-400  font-generalsans  w-full rounded-md py-2 px-5"
+      >
         <a
           href={item.href}
           className="text-lg md:text-base  transition-colors w-full block font-supermarioworld text-[#05FF4D] !text-[26px]"
@@ -84,7 +87,13 @@ const Navbar = () => {
             bg-[#00e542] rounded-[25%]"
             aria-label="Toggle menu"
           >
-            <div ref={checkboxContainerRef} className=" w-[40px]">
+            <div
+              ref={checkboxContainerRef}
+              data-blobity
+              data-blobity-magnetic="false"
+              data-blobity-offset-y="10"
+              className=" w-[40px]"
+            >
               {/* Hidden checkbox for toggling */}
               <input
                 ref={checkboxRef}
