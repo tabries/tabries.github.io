@@ -107,24 +107,25 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    title: "Venu Sports - Remote - Senior Software Engineer (Backend-focused)",
-    duration: "08/2024 - 03/2025",
-    iconSource: "",
-    iconClassname: "hidden",
+    title: "Cynergy US - Remote - Senior Software Engineer (Backend-focused)",
+    duration: "08/2025 - Present",
+    iconSource: "/assets/experiences/cynergy.png",
+    iconClassname: "!max-w-[15rem]",
+    iconBgClassname: "from-[#aca6a2] via-[#d4b390] to-[#003d59] blur-[30px]",
     description: [
-      "Enhanced performance and scalability of content discovery APIs, improving response times and user engagement across the Venu Sports platform.",
-      "Led the integration of an AI-powered chatbot into the live streaming experience, enabling real-time user interaction and support.",
-      "Designed and implemented catch-up functionality, allowing users to replay missed live sports events, significantly enriching the platform’s user experience and retention metrics.",
+      "Engineering from scratch an Electron Desktop Application to support offline activities on the Shipping module of the ERP system for the company tenant user.",
+      "Adding features to the NextJS-based ERP and its NodeJS backend with Oracle DB for data storage.",
+      "Implementing an Automation feature to different modules of the ERP to execute triggers based on custom conditions.",
     ],
     techStack: [
-      "Go",
-      "Rails",
-      "Python",
-      "Kafka",
-      "MySql",
-      "Postgres",
-      "Redis",
-      "Open Search",
+      "Node.js,",
+      "Electron.js,",
+      "OracleDB,",
+      "SQLite,",
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
     ],
   },
   {
@@ -258,6 +259,57 @@ export const workExperiences = [
     ],
   },
 ];
+
+export const projects = [
+  {
+    id: 1,
+    title: "Workout Tracker",
+    iconSource: "/assets/projects/workout-tracker.jpg",
+    projectUrl: "https://github.com/tabries/django-gymtracker",
+    description: [
+      "A modern, full-stack gym tracking app built with React, Vite, TypeScript, Material UI, Tailwind CSS, Django REST API, and React Query.A modern, full-stack gym tracking app built with React, Vite, TypeScript, Material UI, Tailwind CSS, Django REST API, and React Query.",
+    ],
+    techStack: [
+      "TypeScript",
+      "ReactJS",
+      "Python",
+      "Django",
+    ],
+  },
+  {
+    id: 2,
+    title: "ThreeJS Portfolio (this site)",
+    iconSource: "/assets/projects/threejs-portfolio.jpg",
+    projectUrl: "https://github.com/tabries/tabries.github.io",
+    description: [
+      "A space to showcase my journey, experiences, and passion for software engineering. From clean UI design to responsive layouts and performance optimization.",
+    ],
+    techStack: [
+      "TypeScript",
+      "ReactJS",
+      "ThreeJS",
+      "GSAP",
+      "Motion",
+      "Leva",
+    ],
+  },
+  {
+    id: 3,
+    title: "Dynamic Form Generator",
+    iconSource: "/assets/projects/dynamic-form-generator.jpg",
+    projectUrl: "https://github.com/tabries/dynamic-form-generator",
+    description: [
+      "Generates a Multi-Step Dynamic form based on a json file, and also gives the ability to save data from the forms instances.",
+    ],
+    techStack: [
+      "TypeScript",
+      "Angular",
+      "NodeJS",
+      "ExpressJS",
+      "CSS"
+    ],
+  },
+]
 
 export const education = [
   {

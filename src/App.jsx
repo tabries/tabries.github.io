@@ -8,6 +8,7 @@ import Education from "./sections/Education.jsx";
 import Awards from "./sections/Awards.jsx";
 import { initialBlobityOptions } from "./constants/";
 import useBlobity from "blobity/lib/react/useBlobity";
+import Projects from "./sections/Projects.jsx";
 
 const App = () => {
   // eslint-disable-next-line no-unused-vars
@@ -21,6 +22,7 @@ const App = () => {
         <Hero />
         <About />
         <Experience />
+        <Projects />
         <Education />
         <Awards />
         <Contact />
