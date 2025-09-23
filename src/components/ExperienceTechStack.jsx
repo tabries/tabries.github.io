@@ -4,10 +4,13 @@ const ExperienceTechStack = ({ techStack }) => {
   return (
     <ul
       className="flex gap-4 flex-wrap justify-center mt-10
-      lg:ml-30 lg:ml-53 lg:w-[44rem]"
+      lg:ml-53 lg:w-[44rem]"
     >
       {techStack.map((name, index) => (
         <li
+          data-blobity
+          data-blobity-offset-y="8"
+          data-blobity-offset-x="8"
           key={index}
           className="items-center  h-[48px] justify-center w-[8rem] text-center font-ubuntumono flex gap-12 mb-1"
         >
