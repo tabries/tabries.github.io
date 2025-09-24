@@ -27,8 +27,6 @@ const App = () => {
         <Awards />
         <Contact />
 
-        {/* <Projects />
-        */}
       </main>
       <Footer />
     </>

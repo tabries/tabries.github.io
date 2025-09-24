@@ -267,7 +267,7 @@ export const projects = [
     iconSource: "/assets/projects/workout-tracker.jpg",
     projectUrl: "https://github.com/tabries/django-gymtracker",
     description: [
-      "A modern, full-stack gym tracking app built with React, Vite, TypeScript, Material UI, Tailwind CSS, Django REST API, and React Query.A modern, full-stack gym tracking app built with React, Vite, TypeScript, Material UI, Tailwind CSS, Django REST API, and React Query.",
+      "A modern, full-stack gym tracking app built with React, Vite, TypeScript, Material UI, Tailwind CSS, Django REST API, and React Query.",
     ],
     techStack: [
       "TypeScript",
