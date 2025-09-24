@@ -43,11 +43,6 @@ const ProjectList = ({ projects, hovered, setHovered }) => (
             rel="noopener noreferrer"
             className="hidden sm:inline-block ml-2 align-middle"
           >
-            <img
-              src={project.iconSource}
-              alt="link"
-              className="w-5 h-5 inline"
-            />
             <span className="ml-1">🔗</span>
           </a>
         </li>
