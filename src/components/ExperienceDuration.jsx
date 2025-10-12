@@ -15,7 +15,7 @@ const ExperienceDuration = ({ date }) => {
         md:text-[32px]
         md:w-[44rem] xl:w-[50rem]"
       >
-        <span className="px-4">{date}</span>
+        <span className="px-4" data-blobity>{date}</span>
       </div>
     </div>
   );

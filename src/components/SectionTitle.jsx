@@ -7,7 +7,8 @@ const SectionTitle = ({ title }) => {
       max-sm:text-[38px]"
     >
       <hr />
-      <h1 className="self-center">{title}</h1>
+      
+      <h1 className="self-center" data-blobity>{title}</h1>
       <hr />
     </div>
   );

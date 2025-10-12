@@ -84,7 +84,7 @@ const Navbar = () => {
           <label
             htmlFor="menu-toggle"
             className="mr-6 z-40  flex items-center justify-center w-[50px] h-[50px] focus:outline-none cursor-pointer
-            bg-[#00e542] rounded-[25%]"
+            bg-[#05FF4D] rounded-[25%]"
             aria-label="Toggle menu"
           >
             <div

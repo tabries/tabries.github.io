@@ -31,7 +31,11 @@ export const navLinks = [
   },
 ];
 
-export const calculateSizes = (isSmall, isMobile, isTablet) => {
+export const calculateSizes = (
+  isSmall: boolean,
+  isMobile: boolean,
+  isTablet: boolean
+) => {
   return {
     deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.12,
     deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -10.5, 0],
@@ -269,12 +273,7 @@ export const projects = [
     description: [
       "A modern, full-stack gym tracking app built with React, Vite, TypeScript, Material UI, Tailwind CSS, Django REST API, and React Query.",
     ],
-    techStack: [
-      "TypeScript",
-      "ReactJS",
-      "Python",
-      "Django",
-    ],
+    techStack: ["TypeScript", "ReactJS", "Python", "Django"],
   },
   {
     id: 2,
@@ -284,14 +283,7 @@ export const projects = [
     description: [
       "A space to showcase my journey, experiences, and passion for software engineering. From clean UI design to responsive layouts and performance optimization.",
     ],
-    techStack: [
-      "TypeScript",
-      "ReactJS",
-      "ThreeJS",
-      "GSAP",
-      "Motion",
-      "Leva",
-    ],
+    techStack: ["TypeScript", "ReactJS", "ThreeJS", "GSAP", "Motion", "Leva"],
   },
   {
     id: 3,
@@ -301,15 +293,9 @@ export const projects = [
     description: [
       "Generates a Multi-Step Dynamic form based on a json file, and also gives the ability to save data from the forms instances.",
     ],
-    techStack: [
-      "TypeScript",
-      "Angular",
-      "NodeJS",
-      "ExpressJS",
-      "CSS"
-    ],
+    techStack: ["TypeScript", "Angular", "NodeJS", "ExpressJS", "CSS"],
   },
-]
+];
 
 export const education = [
   {
