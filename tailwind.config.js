@@ -22,6 +22,10 @@ export default {
             600: '#AFB0B6',
             500: '#62646C',
           },
+          primary: 'var(--color-primary)',
+          secondary: 'var(--color-secondary)',
+          accent: 'var(--color-accent)',
+          background: 'var(--color-background)',
         },
         backgroundImage: {
           terminal: "url('/assets/terminal.png')",
