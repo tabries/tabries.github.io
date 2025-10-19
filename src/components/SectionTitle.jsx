@@ -1,10 +1,14 @@
 import Reticula1 from "/src/assets/icons/Reticula1.svg?react";
+import { useColors } from "../context/ColorContext.jsx";
 
 const SectionTitle = ({ title }) => {
+  const { colors } = useColors();
+  
   return (
     <div
-      className="font-supermarioworld text-[#05FF4D] text-[44px] flex flex-col py-8
+      className="font-supermarioworld text-[44px] flex flex-col py-8
       max-sm:text-[38px]"
+      style={{ color: colors.primary }}
     >
       <hr />
       
