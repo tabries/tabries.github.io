@@ -5,19 +5,15 @@ import ExperienceTechStack from "../components/ExperienceTechStack.jsx";
 import ExperienceIcon from "../components/ExperienceIcon.jsx";
 import { workExperiences } from "../constants";
 import SectionTitle from "../components/SectionTitle.jsx";
-import { useColors } from "../context/ColorContext.jsx";
 
 const Experience = () => {
-  const { colors } = useColors();
-  
   return (
     <section className="content-center md:px-10 relative pb-20" id="experience">
       <SectionTitle title="Experience" />
       <div className="flex flex-col gap-5 h-full">
         <div
           className="flex flex-col content-center flex-wrap items-center gap-12
-        font-supermarioworld"
-          style={{ color: colors.secondary }}
+        font-supermarioworld text-[#05FF4D]"
         >
           {workExperiences.map((experience, index) => (
             <div key={index}>

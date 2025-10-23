@@ -1,9 +1,6 @@
 import Reticula1 from "/src/assets/icons/Reticula1.svg?react";
-import { useColors } from "../context/ColorContext.jsx";
 
 const ExperienceDuration = ({ date }) => {
-  const { colors } = useColors();
-
   return (
     <div
       className="justify-self-center flex max-lg:mx-2 
@@ -18,9 +15,7 @@ const ExperienceDuration = ({ date }) => {
         md:text-[32px]
         md:w-[44rem] xl:w-[50rem]"
       >
-        <span className="px-4" data-blobity style={{ color: colors.primary }}>
-          {date}
-        </span>
+        <span className="px-4" data-blobity>{date}</span>
       </div>
     </div>
   );

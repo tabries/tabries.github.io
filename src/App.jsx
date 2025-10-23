@@ -9,28 +9,13 @@ import Awards from "./sections/Awards.jsx";
 import { initialBlobityOptions } from "./constants/";
 import useBlobity from "blobity/lib/react/useBlobity";
 import Projects from "./sections/Projects.jsx";
-import { ColorProvider, useColors } from "./context/ColorContext.jsx";
-import { useControls } from "leva";
-import { paletteNames } from "./constants/colorPalettes.js";
 
-const AppContent = () => {
+const App = () => {
   // eslint-disable-next-line no-unused-vars
   const blobity = useBlobity(initialBlobityOptions);
-  const { setCurrentPalette, colors } = useColors();
-
-  // Leva controls for color palette
-  useControls({
-    "Color Palette": {
-      value: "Default Green",
-      options: Object.keys(paletteNames),
-      onChange: (paletteName) => {
-        setCurrentPalette(paletteNames[paletteName]);
-      },
-    },
-  });
 
   return (
-    <div className="bg-black" style={{ backgroundColor: colors.background }}>
+    <>
       <Navbar />
       <main className="max-w-7xl mx-auto relative">
         
@@ -44,15 +29,7 @@ const AppContent = () => {
 
       </main>
       <Footer />
-    </div>
-  );
-};
-
-const App = () => {
-  return (
-    <ColorProvider>
-      <AppContent />
-    </ColorProvider>
+    </>
   );
 };
 

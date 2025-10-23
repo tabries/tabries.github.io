@@ -1,10 +1,7 @@
 import { awards } from "../constants";
 import SectionTitle from "../components/SectionTitle.jsx";
-import { useColors } from "../context/ColorContext.jsx";
 
 const Awards = () => {
-  const { colors } = useColors();
-  
   return (
     <section
       className="content-center md:px-10 pb-20 mt-[5rem] relative"
@@ -13,8 +10,7 @@ const Awards = () => {
       <SectionTitle title="Awards" />
       <div
         className="flex flex-col h-full w-full items-center mt-12
-          font-supermarioworld"
-        style={{ color: colors.primary }}
+          font-supermarioworld text-[#05FF4D]"
       >
         {awards.map((awards, index) => (
           <div

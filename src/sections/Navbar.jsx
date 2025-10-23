@@ -1,35 +1,28 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 
 import { navLinks } from "../constants";
-import { useColors } from "../context/ColorContext.jsx";
 
-const NavItems = () => {
-  const { colors } = useColors();
-  
-  return (
-    <ul className="flex flex-col items-center gap-4 md:gap-6 relative z-20 text-center h-full justify-center">
-      {navLinks.map((item) => (
-        <li
-          key={item.id}
-          className="text-neutral-400  font-generalsans  w-full rounded-md py-2 px-5"
+const NavItems = () => (
+  <ul className="flex flex-col items-center gap-4 md:gap-6 relative z-20 text-center h-full justify-center">
+    {navLinks.map((item) => (
+      <li
+        key={item.id}
+        className="text-neutral-400  font-generalsans  w-full rounded-md py-2 px-5"
+      >
+        <a
+          href={item.href}
+          className="text-lg md:text-base  transition-colors w-full block font-supermarioworld text-[#05FF4D] !text-[26px]"
         >
-          <a
-            href={item.href}
-            className="text-lg md:text-base  transition-colors w-full block font-supermarioworld !text-[26px]"
-            style={{ color: colors.primary }}
-          >
-            {item.name}
-          </a>
-        </li>
-      ))}
-    </ul>
-  );
-};
+          {item.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+);
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
-  const { colors } = useColors();
 
   const toggleMenu = useCallback(() => {
     setIsOpen((prevState) => !prevState);
@@ -91,8 +84,7 @@ const Navbar = () => {
           <label
             htmlFor="menu-toggle"
             className="mr-6 z-40  flex items-center justify-center w-[50px] h-[50px] focus:outline-none cursor-pointer
-            rounded-[25%]"
-            style={{ backgroundColor: colors.primary }}
+            bg-[#05FF4D] rounded-[25%]"
             aria-label="Toggle menu"
           >
             <div
