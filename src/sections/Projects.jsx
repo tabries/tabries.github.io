@@ -3,8 +3,11 @@ import { projects } from "../constants";
 import SectionTitle from "../components/SectionTitle.jsx";
 // eslint-disable-next-line
 import { AnimatePresence, motion } from "framer-motion";
+import { useColors } from "../context/ColorContext.jsx";
 
 const ProjectList = ({ projects, hovered, setHovered }) => {
+  const { colors } = useColors();
+  
   return (
     <div className="w-[30%] flex flex-col justify-center gap-2 py-8">
       <ul className="w-full">
@@ -12,7 +15,8 @@ const ProjectList = ({ projects, hovered, setHovered }) => {
           <li
             key={project.id}
             className={`flex items-center justify-between py-2 border-b border-white/30 transition-colors group
-              ${hovered === idx ? "text-white" : "text-primary"}`}
+              ${hovered === idx ? "text-white" : ""}`}
+            style={{ color: hovered === idx ? "white" : colors.primary }}
             onMouseEnter={() => setHovered(idx)}
           >
           <div className="flex items-center gap-2 w-full">
@@ -59,6 +63,8 @@ const previewVariants = {
 };
 
 const ProjectPreview = ({ project }) => {
+  const { colors } = useColors();
+  
   return (
     <div className="w-[60%] flex items-center justify-center min-h-[340px]">
       <AnimatePresence mode="wait">
@@ -75,7 +81,7 @@ const ProjectPreview = ({ project }) => {
             alt={project.title}
             className="w-full h-full object-contain"
           />
-          <span className="font-ubuntumono text-base text-primary px-4 text-center">
+          <span className="font-ubuntumono text-base px-4 text-center" style={{ color: colors.primary }}>
             {project.description}
           </span>
         </motion.div>

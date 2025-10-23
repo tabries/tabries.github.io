@@ -16,11 +16,12 @@ import { paletteNames } from "./constants/colorPalettes.js";
 const AppContent = () => {
   // eslint-disable-next-line no-unused-vars
   const blobity = useBlobity(initialBlobityOptions);
-  const { setCurrentPalette } = useColors();
+  const { setCurrentPalette, colors } = useColors();
 
   // Leva controls for color palette
   useControls({
     "Color Palette": {
+      value: "Default Green",
       options: Object.keys(paletteNames),
       onChange: (paletteName) => {
         setCurrentPalette(paletteNames[paletteName]);
@@ -29,9 +30,9 @@ const AppContent = () => {
   });
 
   return (
-    <div className="bg-background">
+    <div className="bg-black" style={{ backgroundColor: colors.background }}>
       <Navbar />
-      <main className="mx-auto relative">
+      <main className="max-w-7xl mx-auto relative">
         
         <Hero />
         <About />

@@ -15,7 +15,7 @@ const ExperienceTechStack = ({ techStack }) => {
           data-blobity-offset-y="8"
           data-blobity-offset-x="8"
           key={index}
-          className="relative items-center h-[48px] justify-center w-[8rem] text-center font-ubuntumono flex gap-12 mb-1"
+          className="items-center  h-[48px] justify-center w-[8rem] text-center font-ubuntumono flex gap-12 mb-1"
         >
           <PillBorder className="absolute w-32 h-14" />
           <span

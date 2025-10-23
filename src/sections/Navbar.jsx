@@ -1,8 +1,11 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 
 import { navLinks } from "../constants";
+import { useColors } from "../context/ColorContext.jsx";
 
 const NavItems = () => {
+  const { colors } = useColors();
+  
   return (
     <ul className="flex flex-col items-center gap-4 md:gap-6 relative z-20 text-center h-full justify-center">
       {navLinks.map((item) => (
@@ -12,7 +15,8 @@ const NavItems = () => {
         >
           <a
             href={item.href}
-            className="text-lg md:text-base transition-colors w-full block font-supermarioworld !text-[26px] text-primary"
+            className="text-lg md:text-base  transition-colors w-full block font-supermarioworld !text-[26px]"
+            style={{ color: colors.primary }}
           >
             {item.name}
           </a>
@@ -25,6 +29,7 @@ const NavItems = () => {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+  const { colors } = useColors();
 
   const toggleMenu = useCallback(() => {
     setIsOpen((prevState) => !prevState);
@@ -85,7 +90,9 @@ const Navbar = () => {
         <div className="flex justify-end items-center py-5 mx-auto">
           <label
             htmlFor="menu-toggle"
-            className="mr-6 z-40 flex items-center justify-center w-[50px] h-[50px] focus:outline-none cursor-pointer rounded-[25%] bg-primary"
+            className="mr-6 z-40  flex items-center justify-center w-[50px] h-[50px] focus:outline-none cursor-pointer
+            rounded-[25%]"
+            style={{ backgroundColor: colors.primary }}
             aria-label="Toggle menu"
           >
             <div
