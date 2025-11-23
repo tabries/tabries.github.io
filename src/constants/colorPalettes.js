@@ -1,11 +1,11 @@
 // Popular color palettes from ColorHunt
 export const colorPalettes = {
-  default: {
-    name: "Default Green",
-    background: "#355070",
-    primary: "#eaac8b",
-    secondary: "#B8C4A9",
-    accent: "#6FA4AF",
+  mintFresh: {
+    name: "Mint Fresh",
+    background: "#0F2027",
+    primary: "#2BC0E4",
+    secondary: "#EAEAEA",
+    accent: "#203A43",
   },
   neonGreen: {
     name: "Neon Green",
@@ -21,6 +21,28 @@ export const colorPalettes = {
     secondary: "#FF006E",
     accent: "#1A1D3A",
   },
+  sunset: {
+    name: "Sunset",
+    background: "#1A1423",
+    primary: "#F97068",
+    secondary: "#FFDAB9",
+    accent: "#2D2433",
+  },
+  iceBlue: {
+    name: "Ice Blue",
+    background: "#0C1821",
+    primary: "#A3E7FC",
+    secondary: "#E6F7FF",
+    accent: "#1B2F3A",
+  },
+  goldenTwilight: {
+    name: "Golden Twilight",
+    background: "#001d3d",
+    primary: "#ffc300",
+    secondary: "#ffc300",
+    accent: "#ffd60a",
+  },
+
   purpleHaze: {
     name: "Purple Haze",
     background: "#1A0B2E",
@@ -34,20 +56,6 @@ export const colorPalettes = {
     primary: "#64FFDA",
     secondary: "#CCD6F6",
     accent: "#172A45",
-  },
-  sunset: {
-    name: "Sunset",
-    background: "#1A1423",
-    primary: "#F97068",
-    secondary: "#FFDAB9",
-    accent: "#2D2433",
-  },
-  mintFresh: {
-    name: "Mint Fresh",
-    background: "#0F2027",
-    primary: "#2BC0E4",
-    secondary: "#EAEAEA",
-    accent: "#203A43",
   },
   retroWave: {
     name: "Retro Wave",
@@ -91,19 +99,20 @@ export const colorPalettes = {
     secondary: "#FFF8DC",
     accent: "#2D2418",
   },
-  iceBlue: {
-    name: "Ice Blue",
-    background: "#0C1821",
-    primary: "#A3E7FC",
-    secondary: "#E6F7FF",
-    accent: "#1B2F3A",
-  },
+  
   lavender: {
     name: "Lavender Dreams",
     background: "#1A0F2E",
     primary: "#B794F6",
     secondary: "#E9D5FF",
     accent: "#2D1A4E",
+  },
+  default: {
+    name: "Default Green",
+    background: "#355070",
+    primary: "#eaac8b",
+    secondary: "#B8C4A9",
+    accent: "#6FA4AF",
   },
 };
 

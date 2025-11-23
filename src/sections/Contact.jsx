@@ -16,7 +16,7 @@ const Contact = () => {
     <section className="content-center md:px-10 relative" id="contact">
       <SectionTitle title="Contact Me" />
       <div className="w-full mt-12 flex justify-center">
-        <div className="font-supermarioworld h-100">
+        <div className="font-supermarioworld h-100 text-primary">
           <ContactOptions
             className="z-0 rotate-90 absolute mt-[-30px] h-[22rem] w-[363px]
           max-sm:max-w-75"
