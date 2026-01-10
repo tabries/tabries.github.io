@@ -1,9 +1,9 @@
 import Reticula1 from "/src/assets/icons/Reticula1.svg?react";
 
-const SectionTitle = ({ title }) => {
+const SectionTitle = ({ title, className }) => {
   return (
     <div
-      className="font-supermarioworld text-primary text-[44px] flex flex-col py-8 max-sm:text-[38px]"
+      className={`font-supermarioworld text-primary text-[44px] flex flex-col max-sm:text-[38px] ${className}`}
     >
       <hr />
       

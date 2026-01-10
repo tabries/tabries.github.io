@@ -4,7 +4,8 @@ const ExperienceIcon = ({ src, className, bgClassname }) => {
   return (
     !!src && (
       <div
-        className={`${className} my-16 max-lg:px-7 justify-self-center md:ml-36 max-w-[18rem] lg:ml-40`}
+        className={`${className} px-7 my-12 max-w-[18rem] justify-self-center
+        lg:px-0 lg:my-4`}
       >
         <div className="relative mx-auto">
           <div

@@ -3,9 +3,8 @@ import Reticula1 from "/src/assets/icons/Reticula1.svg?react";
 const ExperienceDescription = ({ details }) => {
   return (
     <ul
-      className="mt-8
-      max-lg:px-6
-      lg:ml-26 lg:ml-54 lg:w-[44rem]"
+      className="text-[#afb0b6] mt-8
+      max-lg:px-6"
     >
       {details.map((detail, index) => (
         <li

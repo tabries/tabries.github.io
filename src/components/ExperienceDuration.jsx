@@ -14,9 +14,9 @@ const ExperienceDuration = ({ date }) => {
         className="content-center border-4 border-dashed border-green-500 
         text-[20px] text-center 
         
-        max-sm:w-70
-        md:text-[32px]
-        md:w-[44rem] xl:w-[50rem]"
+        
+       
+        "
       >
         <span className="px-4" data-blobity style={{ color: colors.primary }}>
           {date}
