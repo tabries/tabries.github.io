@@ -15,40 +15,40 @@ const ProjectList = ({ projects, hovered, setHovered }) => {
               ${hovered === idx ? "text-white" : "text-primary"}`}
             onMouseEnter={() => setHovered(idx)}
           >
-          <div className="flex items-center gap-2 w-full">
-            {/* Desktop: title clickable to setHovered, not a link */}
-            <span
-              className="font-ubuntumono text-lg hidden sm:inline cursor-pointer"
-              onClick={() => setHovered(idx)}
-            >
-              {project.title}
-            </span>
-            {/* Mobile: title not clickable, but link icon shown */}
-            <span className="font-ubuntumono text-lg sm:hidden" data-blobity>
-              {project.title}
-              <a
-                href={project.projectUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block ml-2 align-middle"
+            <div className="flex items-center gap-2 w-full">
+              {/* Desktop: title clickable to setHovered, not a link */}
+              <span
+                className="font-ubuntumono text-lg hidden sm:inline cursor-pointer"
+                onClick={() => setHovered(idx)}
               >
-                <span className="ml-1">🔗</span>
-              </a>
-            </span>
-          </div>
-          {/* Desktop: link icon after title, only visible on sm and up */}
-          <a
-            href={project.projectUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:inline-block ml-2 align-middle"
-          >
-            <span className="ml-1">🔗</span>
-          </a>
-        </li>
-      ))}
-    </ul>
-  </div>
+                {project.title}
+              </span>
+              {/* Mobile: title not clickable, but link icon shown */}
+              <span className="font-ubuntumono text-lg sm:hidden" data-blobity>
+                {project.title}
+                <a
+                  href={project.projectUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block ml-2 align-middle"
+                >
+                  <span className="ml-1">🔗</span>
+                </a>
+              </span>
+            </div>
+            {/* Desktop: link icon after title, only visible on sm and up */}
+            <a
+              href={project.projectUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline-block ml-2 align-middle"
+            >
+              <span className="ml-1">⬈</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
@@ -88,12 +88,9 @@ const Projects = () => {
   const [hovered, setHovered] = useState(0);
 
   return (
-    <section
-      className="content-center md:px-10 relative pb-20"
-      id="projects"
-    >
+    <section className="content-center md:px-10 relative pb-8" id="projects">
       <SectionTitle title="Projects" />
-      <div className="flex gap-5 h-full justify-center">
+      <div className="flex gap-5 h-full justify-center mt-8">
         <ProjectPreview project={projects[hovered]} hovered={hovered} />
         <ProjectList
           projects={projects}

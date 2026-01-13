@@ -30,22 +30,22 @@ const About = () => {
 
   return (
     <section
-      className="mb-8 mt-[50rem] relative pb-5
-      lg:mb-20 md:px-10"
+      className="mt-[50rem] relative pb-4 pt-8
+      md:px-10 lg:mb-0"
       id="about"
     >
       <SectionTitle title="About Me" />
       <div
-        className="flex flex-col justify-center
-        xl:flex-row
+        className="flex flex-col justify-center 
         max-lg:gap-6
-        xl:gap-4"
+        lg:mt-6
+        xl:gap-4 xl:flex-row"
       >
         <div
           className="grid  h-full gap-5
           grid-rows-2
           grid-cols-1
-          lg:grid-cols-2
+          lg:grid-cols-2 lg:gap-y-12 lg:gap-x-0
           xl:grid-rows-4 xl:px-0 xl:gap-4"
         >
           <div
@@ -270,7 +270,7 @@ const About = () => {
                 className="absolute 
                 w-89
                 max-xl:max-w-80
-                xl:top-30"
+                xl:top-26"
               />
             </div>
           </div>
