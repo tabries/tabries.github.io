@@ -14,11 +14,24 @@ export const useColors = () => {
 };
 
 export const ColorProvider = ({ children }) => {
-  const [currentPalette, setCurrentPalette] = useState("neonGreen");
+  const [currentPalette, setCurrentPalette] = useState("sunset");
   const [isTransitioning, setIsTransitioning] = useState(false);
   const colors = colorPalettes[currentPalette];
   const previousColorsRef = useRef(colors);
   const animationFrameRef = useRef(null);
+  const isInitialMount = useRef(true);
+
+  // Set initial CSS variables on mount
+  useEffect(() => {
+    if (isInitialMount.current) {
+      document.documentElement.style.setProperty("--color-background", colors.background);
+      document.documentElement.style.setProperty("--color-primary", colors.primary);
+      document.documentElement.style.setProperty("--color-secondary", colors.secondary);
+      document.documentElement.style.setProperty("--color-accent", colors.accent);
+      document.body.style.backgroundColor = colors.background;
+      isInitialMount.current = false;
+    }
+  }, []);
 
   useEffect(() => {
     const previousColors = previousColorsRef.current;
