@@ -5,34 +5,17 @@ import Navbar from "./sections/Navbar.jsx";
 import Contact from "./sections/Contact.jsx";
 import Experience from "./sections/Experience.jsx";
 import Education from "./sections/Education.jsx";
-import Awards from "./sections/Awards.jsx";
-import { initialBlobityOptions } from "./constants/";
-import useBlobity from "blobity/lib/react/useBlobity";
+import Awards from "./sections/Awards.jsx";;
 import Projects from "./sections/Projects.jsx";
-import { ColorProvider, useColors } from "./context/ColorContext.jsx";
-import { useControls } from "leva";
-import { paletteNames } from "./constants/colorPalettes.js";
+import { ColorProvider } from "./context/ColorContext.jsx";
+import { ThemePicker } from "./components/ThemePicker.jsx";
 
 const AppContent = () => {
-  // eslint-disable-next-line no-unused-vars
-  const blobity = useBlobity(initialBlobityOptions);
-  const { setCurrentPalette } = useColors();
-
-  // Leva controls for color palette
-  useControls({
-    "Color Palette": {
-      options: Object.keys(paletteNames),
-      onChange: (paletteName) => {
-        setCurrentPalette(paletteNames[paletteName]);
-      },
-    },
-  });
 
   return (
     <div className="bg-background">
       <Navbar />
       <main className="mx-auto relative">
-        
         <Hero />
         <About />
         <Experience />
@@ -40,9 +23,9 @@ const AppContent = () => {
         <Education />
         <Awards />
         <Contact />
-
       </main>
       <Footer />
+      <ThemePicker />
     </div>
   );
 };
