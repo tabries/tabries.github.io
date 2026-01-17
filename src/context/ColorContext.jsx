@@ -31,7 +31,7 @@ export const ColorProvider = ({ children }) => {
       document.body.style.backgroundColor = colors.background;
       isInitialMount.current = false;
     }
-  }, []);
+  }, [colors.accent, colors.background, colors.primary, colors.secondary]);
 
   useEffect(() => {
     const previousColors = previousColorsRef.current;
