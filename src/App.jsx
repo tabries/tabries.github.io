@@ -5,12 +5,17 @@ import Navbar from "./sections/Navbar.jsx";
 import Contact from "./sections/Contact.jsx";
 import Experience from "./sections/Experience.jsx";
 import Education from "./sections/Education.jsx";
-import Awards from "./sections/Awards.jsx";;
+import Awards from "./sections/Awards.jsx";
+import { initialBlobityOptions } from "./constants/";
+import useBlobity from "blobity/lib/react/useBlobity";
 import Projects from "./sections/Projects.jsx";
 import { ColorProvider } from "./context/ColorContext.jsx";
 import { ThemePicker } from "./components/ThemePicker.jsx";
+import { useThemedBlobity } from "./hooks/useThemedBlobity.js";
 
 const AppContent = () => {
+  const blobity = useBlobity(initialBlobityOptions);
+  useThemedBlobity(blobity);
 
   return (
     <div className="bg-background">
