@@ -35,6 +35,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="z-10"
+                  data-blobity-magnetic="false"
                 >
                   {IconComponent && <IconComponent className={className} />}
                 </a>
