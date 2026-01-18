@@ -340,11 +340,13 @@ export const initialBlobityOptions = {
   licenseKey: "opensource",
   focusableElementsOffsetX: 12,
   focusableElementsOffsetY: 2,
-  invert: true,
+  invert: false,
   focusableElements:
     "[data-blobity], a:not([data-no-blobity]), button:not([data-no-blobity]), [data-blobity-tooltip]",
-  opacity: 1,
+  opacity: 0.10,
   fontColor: "#08233b",
   zIndex: 1000,
   magnetic: true,
+  // color: "#F97068",
+  dotColor: "#fff",
 };
