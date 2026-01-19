@@ -12,6 +12,7 @@ const ExperienceTechStack = ({ techStack }) => {
       {techStack.map((name, index) => (
         <li
           data-blobity
+          data-blobity-magnetic="false"
           data-blobity-offset-y="8"
           data-blobity-offset-x="8"
           key={index}
