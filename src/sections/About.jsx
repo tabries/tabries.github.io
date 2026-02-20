@@ -83,7 +83,7 @@ const About = () => {
                     data-blobity
                     data-blobity-magnetic="false"
                   >
-                    With more than 6 years of experience, I have honed my skills
+                    With over 7 years of experience, I have honed my skills
                     in both frontend and backend dev, creating reliable and
                     scalable products with the best user experience.
                   </p>
