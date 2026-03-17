@@ -50,26 +50,7 @@ const Projects = () => {
             );
           })}
         </Carousel>
-        <div className="flex justify-center mt-6 md:mt-8 gap-5">
-          <button
-            data-no-blobity
-            type="button"
-            className="h-8 w-20 border-none bg-[#060606] text-[#e5e5e5] cursor-pointer disabled:opacity-50 hover:bg-[#1a1a1a] transition-colors"
-            disabled={activeIndex === 0}
-            onClick={() => setActiveIndex(activeIndex - 1)}
-          >
-            Prev
-          </button>
-          <button
-            data-no-blobity
-            type="button"
-            className="h-8 w-20 border-none bg-[#060606] text-[#e5e5e5] cursor-pointer disabled:opacity-50 hover:bg-[#1a1a1a] transition-colors"
-            disabled={activeIndex === projects.length - 1}
-            onClick={() => setActiveIndex(activeIndex + 1)}
-          >
-            Next
-          </button>
-        </div>
+
       </div>
     </section>
   );
