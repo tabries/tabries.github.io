@@ -10,6 +10,7 @@ import MyPassionSeparator from "/src/assets/icons/MyPassionSeparator.svg?react";
 import LinkedIn from "/src/assets/icons/LinkedIn.svg?react";
 import Github from "/src/assets/icons/Github.svg?react";
 import Gmail from "/src/assets/icons/Gmail.svg?react";
+import Resume from "/src/assets/icons/CurriculumVitae.svg?react";
 import SectionTitle from "../components/SectionTitle.jsx";
 import { contact } from "../constants";
 
@@ -26,6 +27,7 @@ const About = () => {
     linkedin: { component: LinkedIn, className: "mt-[2px]" },
     github: { component: Github },
     gmail: { component: Gmail, className: "mt-[6px] ml-[2px]" },
+    resume: { component: Resume, className: "mt-[6px] ml-[5px]" },
   };
 
   return (
@@ -281,7 +283,7 @@ const About = () => {
           >
             <div className="relative flex flex-row">
               <div
-                className="left-22 bottom-3 absolute justify-center content-center flex flex-wrap gap-2 h-full
+                className="left-17 bottom-3 absolute justify-center content-center flex flex-wrap gap-2 h-full
               max-lg:left-17"
               >
                 {contact.map((item) => {

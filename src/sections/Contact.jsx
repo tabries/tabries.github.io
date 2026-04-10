@@ -3,6 +3,7 @@ import SectionTitle from "../components/SectionTitle.jsx";
 import LinkedIn from "/src/assets/icons/LinkedIn.svg?react";
 import Github from "/src/assets/icons/Github.svg?react";
 import Gmail from "/src/assets/icons/Gmail.svg?react";
+import Resume from "/src/assets/icons/CurriculumVitae.svg?react";
 import ContactOptions from "/src/assets/icons/ContactOptions.svg?react";
 
 const Contact = () => {
@@ -10,6 +11,7 @@ const Contact = () => {
     linkedin: { component: LinkedIn, className: "mt-[2px]" },
     github: { component: Github },
     gmail: { component: Gmail, className: "mt-[6px] ml-[2px]" },
+    resume: { component: Resume, className: "mt-[6px] ml-[5px]" },
   };
 
   return (

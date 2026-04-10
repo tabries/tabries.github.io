@@ -34,6 +34,11 @@ export const navLinks = [
     name: "Contact",
     href: "#contact",
   },
+  {
+    id: 8,
+    name: "Resume 🗎",
+    href: "assets/Gabriel_Martinez_CV_SENIOR_SOFTWARE_ENGINEER.pdf",
+  }
 ];
 
 export const calculateSizes = (
@@ -368,6 +373,12 @@ export const contact = [
     name: "Gmail",
     icon: "gmail",
     link: "mailto:gamartinezayala@gmail.com?Subject=Job%20Oportunity",
+  },
+  {
+    id: 4,
+    name: "Resume",
+    icon: "resume",
+    link: "assets/Gabriel_Martinez_CV_SENIOR_SOFTWARE_ENGINEER.pdf",
   },
 ];
 
