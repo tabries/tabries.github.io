@@ -283,8 +283,8 @@ const About = () => {
           >
             <div className="relative flex flex-row">
               <div
-                className="left-17 bottom-3 absolute justify-center content-center flex flex-wrap gap-2 h-full
-              max-lg:left-17"
+                className="left-14 bottom-0 absolute justify-center content-center flex flex-wrap gap-2 h-full w-[200px]
+              min-lg:left-22"
               >
                 {contact.map((item) => {
                   const { component: IconComponent, className } =
